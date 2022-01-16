@@ -113,6 +113,7 @@ const landingPage = () => {
           <li>etc</li>
         </ul>
       </section>
+
       <section class="section-about-us">
         <div class="intro-section">
           <h2>Sobre Nós</h2>
@@ -149,6 +150,7 @@ const landingPage = () => {
           </div>
         </div>
       </section>
+
       <footer class="section-contact">
         <div class="contact-column">
           <h2>CONTATO</h2>
