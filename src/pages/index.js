@@ -2,30 +2,39 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 import "../styles/general.scss"
+import * as heroStyles from "../styles/hero-section.module.scss"
 
 const landingPage = () => {
   return (
     <div>
-      <header class="hero-section">
-        <nav>
+      <header className={heroStyles.heroSection}>
+        <nav className={`${heroStyles.container} ${heroStyles.navBar}`}>
           <StaticImage
             src="../images/cof-logo-cropped-compressed.png"
             alt="Contra o Filé Logo"
-            class="nav-logo"
+            className={heroStyles.logoImg}
           />
 
-          <ul class="main-nav">
+          <ul className={heroStyles.mainNav}>
             <li>
-              <a href="#">Cardápio</a>
+              <a href="#" className={`${heroStyles.btn} ${heroStyles.navBtn}`}>
+                Cardápio
+              </a>
             </li>
             <li>
-              <a href="#">Galeria</a>
+              <a href="#" className={`${heroStyles.btn} ${heroStyles.navBtn}`}>
+                Galeria
+              </a>
             </li>
             <li>
-              <a href="#">Sobre Nós</a>
+              <a href="#" className={`${heroStyles.btn} ${heroStyles.navBtn}`}>
+                Sobre Nós
+              </a>
             </li>
             <li>
-              <a href="#">Contato</a>
+              <a href="#" className={`${heroStyles.btn} ${heroStyles.navBtn}`}>
+                Contato
+              </a>
             </li>
           </ul>
         </nav>
@@ -33,7 +42,7 @@ const landingPage = () => {
         <div class="hero-textbox">
           <h1>Saudável. Delicioso. Vegano.</h1>
           <p>Uma opção saudável e acessível para todos.</p>
-          <a class="btn" href="#">
+          <a className={heroStyles.btn} href="#">
             Tô com fome
           </a>
         </div>
