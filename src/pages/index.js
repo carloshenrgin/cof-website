@@ -1,6 +1,8 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
+import "../styles/general.scss"
+
 const landingPage = () => {
   return (
     <div>
@@ -29,7 +31,7 @@ const landingPage = () => {
         </nav>
 
         <div class="hero-textbox">
-          <h1>Saudável. Delicioso. Vegano,</h1>
+          <h1>Saudável. Delicioso. Vegano.</h1>
           <p>Uma opção saudável e acessível para todos.</p>
           <a class="btn" href="#">
             Tô com fome
