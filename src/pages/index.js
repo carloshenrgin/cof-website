@@ -105,8 +105,50 @@ const landingPage = () => {
         </div>
       </section>
 
-      <section class="section-gallery"></section>
-      <section class="section-about-us"></section>
+      <section class="section-gallery">
+        <h2>Galeria</h2>
+        <ul class="dishes-showcase">
+          <li>Imagem #1</li>
+          <li>Imagem #2</li>
+          <li>etc</li>
+        </ul>
+      </section>
+      <section class="section-about-us">
+        <div class="intro-section">
+          <h2>Sobre Nós</h2>
+          <p class="intro-copy">
+            O Contra o Filé é um restaurante de comida vegana que surgiu com a
+            proposta de tornar comida saudável e sem produtos de origem animal
+            acessível para todos.
+          </p>
+        </div>
+        <div class="values-section">
+          <h3>Nossos Valores</h3>
+          <div class="values-row">
+            <div class="business-value">
+              <h4>COMIDA VEGANA SAUDÁVEL E FRESCA</h4>
+              <p>
+                Não importa se você começou ontem no veganismo ou já está no
+                caminho a tempos, temos algo que vai agradar o seu paladar.
+              </p>
+            </div>
+            <div class="business-value">
+              <h4>PRODUTOS LOCAIS E ORGÂNICOS</h4>
+              <p>
+                Trabalhamos com produtos de agricultura familiar e incentivamos
+                a produção de comida local.
+              </p>
+            </div>
+            <div class="business-value">
+              <h4>ACESSÍVEL À TODOS</h4>
+              <p>
+                Comida vegana não precisa ser cara e inacessível, o Contra o
+                Filé tenta democratizar o acesso a esse tipo de produto.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       <footer class="section-contact"></footer>
     </div>
   )
