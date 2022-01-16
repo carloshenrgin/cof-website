@@ -149,7 +149,26 @@ const landingPage = () => {
           </div>
         </div>
       </section>
-      <footer class="section-contact"></footer>
+      <footer class="section-contact">
+        <div class="contact-column">
+          <h2>CONTATO</h2>
+          <div class="contact-info">
+            <p>Rua Alfredo Lopes 1717 - Jardim Macarengo</p>
+            <p>São Carlos - SP, 13560460</p>
+            <p>(16) 98765-1234 - Whatsapp</p>
+          </div>
+          <p>Atendemos presencialmente, via Whatsapp e aplicativo de entrega</p>
+        </div>
+        <div class="hours-column">
+          <h2>HORÁRIOS</h2>
+          <p>
+            <i>Segunda - Sábado</i> | 11:00 - 15:00
+          </p>
+          <p>
+            <i>Domingo</i> | Fechado
+          </p>
+        </div>
+      </footer>
     </div>
   )
 }
