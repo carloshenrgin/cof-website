@@ -97,8 +97,8 @@ const landingPage = () => {
               </a>
             </li>
             <li>
-              <a href="#appetizers" className={menuStyles.menuBtn}>
-                Porções
+              <a href="#snacks" className={menuStyles.menuBtn}>
+                Lanches
               </a>
             </li>
             <li>
@@ -228,11 +228,11 @@ const landingPage = () => {
           </div>
         </div>
 
-        <div id="appetizers" className={menuStyles.menuSubsection}>
+        <div id="snacks" className={menuStyles.menuSubsection}>
           <h3
             className={`${generalStyles.sectionSubheading} ${menuStyles.subsectionHeading}`}
           >
-            Porções
+            Lanches
           </h3>
 
           <div className={menuStyles.optionsGrid}>
