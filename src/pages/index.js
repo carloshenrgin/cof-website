@@ -1,7 +1,8 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-import "../styles/general.scss"
+// import "../styles/general.scss"
+import * as generalStyles from "../styles/general.module.scss"
 import * as heroStyles from "../styles/hero-section.module.scss"
 
 const landingPage = () => {
@@ -42,7 +43,7 @@ const landingPage = () => {
 
         <div className={heroStyles.heroTextContainer}>
           <div className={heroStyles.heroText}>
-            <h1>
+            <h1 className={generalStyles.pageHeading}>
               Saudável. Delicioso.
               <span className={heroStyles.headingAccent}> Vegano.</span>
             </h1>
@@ -55,7 +56,7 @@ const landingPage = () => {
       </header>
 
       <section class="section-menu">
-        <h2>Cardápio</h2>
+        <h2 className={generalStyles.sectionHeading}>Cardápio</h2>
         <nav class="menu-nav">
           <ul>
             <li>Marmitas</li>
@@ -66,9 +67,9 @@ const landingPage = () => {
           </ul>
         </nav>
         <div class="packed-lunch-section">
-          <h3>Marmitas</h3>
+          <h3 className={generalStyles.sectionSubheading}>Marmitas</h3>
           <div>
-            <h4>Sample Option</h4>
+            <h4 className={generalStyles.contentHeading}>Sample Option</h4>
             <p>Description</p>
             <div class="price-row">
               <p class="price">(P) R$ XX,XX</p>
@@ -77,9 +78,9 @@ const landingPage = () => {
           </div>
         </div>
         <div class="burger-section">
-          <h3>Burgueres</h3>
+          <h3 className={generalStyles.sectionSubheading}>Burgueres</h3>
           <div>
-            <h4>Sample Option</h4>
+            <h4 className={generalStyles.contentHeading}>Sample Option</h4>
             <p>Description</p>
             <div class="price-row">
               <p class="price">(U) R$ XX,XX</p>
@@ -87,9 +88,9 @@ const landingPage = () => {
           </div>
         </div>
         <div class="appetizer-section">
-          <h3>Porções</h3>
+          <h3 className={generalStyles.sectionSubheading}>Porções</h3>
           <div>
-            <h4>Sample Option</h4>
+            <h4 className={generalStyles.contentHeading}>Sample Option</h4>
             <p>Description</p>
             <div class="price-row">
               <p class="price">(P) R$ XX,XX</p>
@@ -99,9 +100,9 @@ const landingPage = () => {
           </div>
         </div>
         <div class="smoothies-section">
-          <h3>Smoothies</h3>
+          <h3 className={generalStyles.sectionSubheading}>Smoothies</h3>
           <div>
-            <h4>Sample Option</h4>
+            <h4 className={generalStyles.contentHeading}>Sample Option</h4>
             <p>Description</p>
             <div class="price-row">
               <p class="price">(P) R$ XX,XX</p>
@@ -111,9 +112,9 @@ const landingPage = () => {
           </div>
         </div>
         <div class="drinks-section">
-          <h3>Bebidas</h3>
+          <h3 className={generalStyles.sectionSubheading}>Bebidas</h3>
           <div>
-            <h4>Sample Option</h4>
+            <h4 className={generalStyles.contentHeading}>Sample Option</h4>
             <p>Description</p>
             <div class="price-row">
               <p class="price">(U) R$ XX,XX</p>
@@ -123,7 +124,7 @@ const landingPage = () => {
       </section>
 
       <section class="section-gallery">
-        <h2>Galeria</h2>
+        <h2 className={generalStyles.sectionHeading}>Galeria</h2>
         <ul class="dishes-showcase">
           <li>Imagem #1</li>
           <li>Imagem #2</li>
@@ -133,7 +134,7 @@ const landingPage = () => {
 
       <section class="section-about-us">
         <div class="intro-section">
-          <h2>Sobre Nós</h2>
+          <h2 className={generalStyles.sectionHeading}>Sobre Nós</h2>
           <p class="intro-copy">
             O Contra o Filé é um restaurante de comida vegana que surgiu com a
             proposta de tornar comida saudável e sem produtos de origem animal
@@ -141,24 +142,30 @@ const landingPage = () => {
           </p>
         </div>
         <div class="values-section">
-          <h3>Nossos Valores</h3>
+          <h3 className={generalStyles.sectionSubheading}>Nossos Valores</h3>
           <div class="values-row">
             <div class="business-value">
-              <h4>COMIDA VEGANA SAUDÁVEL E FRESCA</h4>
+              <h4 className={generalStyles.contentHeading}>
+                COMIDA VEGANA SAUDÁVEL E FRESCA
+              </h4>
               <p>
                 Não importa se você começou ontem no veganismo ou já está no
                 caminho a tempos, temos algo que vai agradar o seu paladar.
               </p>
             </div>
             <div class="business-value">
-              <h4>PRODUTOS LOCAIS E ORGÂNICOS</h4>
+              <h4 className={generalStyles.contentHeading}>
+                PRODUTOS LOCAIS E ORGÂNICOS
+              </h4>
               <p>
                 Trabalhamos com produtos de agricultura familiar e incentivamos
                 a produção de comida local.
               </p>
             </div>
             <div class="business-value">
-              <h4>ACESSÍVEL À TODOS</h4>
+              <h4 className={generalStyles.contentHeading}>
+                ACESSÍVEL À TODOS
+              </h4>
               <p>
                 Comida vegana não precisa ser cara e inacessível, o Contra o
                 Filé tenta democratizar o acesso a esse tipo de produto.
@@ -170,7 +177,7 @@ const landingPage = () => {
 
       <footer class="section-contact">
         <div class="contact-column">
-          <h2>CONTATO</h2>
+          <h2 className={generalStyles.sectionHeading}>CONTATO</h2>
           <div class="contact-info">
             <p>Rua Alfredo Lopes 1717 - Jardim Macarengo</p>
             <p>São Carlos - SP, 13560460</p>
@@ -179,7 +186,7 @@ const landingPage = () => {
           <p>Atendemos presencialmente, via Whatsapp e aplicativo de entrega</p>
         </div>
         <div class="hours-column">
-          <h2>HORÁRIOS</h2>
+          <h2 className={generalStyles.sectionHeading}>HORÁRIOS</h2>
           <p>
             <i>Segunda - Sábado</i> | 11:00 - 15:00
           </p>
