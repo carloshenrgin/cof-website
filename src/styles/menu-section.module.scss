@@ -1,0 +1,88 @@
+$logo-orange-1: #ea9b58;
+$logo-green-shade-1: #3d570e;
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 8rem 0;
+}
+
+.menu-heading {
+  margin-bottom: 3.2rem;
+}
+
+.menu-heading::after {
+  content: "";
+  background-color: $logo-orange-1;
+
+  display: block;
+  height: 0.2rem;
+  width: 8rem;
+  margin: 0 auto;
+  margin-top: 3.2rem;
+}
+
+.menu-nav {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1.2rem;
+  margin-bottom: 4.8rem;
+}
+
+.menu-btn:link,
+.menu-btn:visited {
+  font-size: 2rem;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #424242;
+  padding: 0.8rem 1rem;
+  border: 1px solid #424242;
+
+  display: inline-block;
+}
+
+.menu-subsection {
+  margin-bottom: 4.8rem;
+}
+
+.subsection-heading {
+  margin-bottom: 2.4rem;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2.4rem;
+  row-gap: 2.4rem;
+}
+
+.order-option {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.option-heading {
+  margin-bottom: 1.6rem;
+}
+
+.option-description {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: 2.4rem;
+}
+
+.price-row {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 500;
+  color: $logo-green-shade-1;
+}

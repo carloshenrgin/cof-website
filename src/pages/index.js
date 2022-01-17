@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 // import "../styles/general.scss"
 import * as generalStyles from "../styles/general.module.scss"
 import * as heroStyles from "../styles/hero-section.module.scss"
+import * as menuStyles from "../styles/menu-section.module.scss"
 
 const landingPage = () => {
   return (
@@ -55,69 +56,224 @@ const landingPage = () => {
         </div>
       </header>
 
-      <section class="section-menu">
-        <h2 className={generalStyles.sectionHeading}>Cardápio</h2>
-        <nav class="menu-nav">
-          <ul>
-            <li>Marmitas</li>
-            <li>Burgueres</li>
-            <li>Porções</li>
-            <li>Smoothies</li>
-            <li>Bebidas</li>
+      <section class="section-menu" className={menuStyles.container}>
+        <h2
+          className={`${generalStyles.sectionHeading} ${menuStyles.menuHeading}`}
+        >
+          Cardápio
+        </h2>
+        <nav>
+          <ul className={menuStyles.menuNav}>
+            <li>
+              <a href="#" className={menuStyles.menuBtn}>
+                Marmitas
+              </a>
+            </li>
+            <li>
+              <a href="#" className={menuStyles.menuBtn}>
+                Burgueres
+              </a>
+            </li>
+            <li>
+              <a href="#" className={menuStyles.menuBtn}>
+                Porções
+              </a>
+            </li>
+            <li>
+              <a href="#" className={menuStyles.menuBtn}>
+                Smoothies
+              </a>
+            </li>
+            <li>
+              <a href="#" className={menuStyles.menuBtn}>
+                Bebidas
+              </a>
+            </li>
           </ul>
         </nav>
-        <div class="packed-lunch-section">
-          <h3 className={generalStyles.sectionSubheading}>Marmitas</h3>
-          <div>
-            <h4 className={generalStyles.contentHeading}>Sample Option</h4>
-            <p>Description</p>
-            <div class="price-row">
-              <p class="price">(P) R$ XX,XX</p>
-              <p class="price">(G) R$ XX,XX</p>
+
+        <div class="packed-lunch-section" className={menuStyles.menuSubsection}>
+          <h3
+            className={`${generalStyles.sectionSubheading} ${menuStyles.subsectionHeading}`}
+          >
+            Marmitas
+          </h3>
+
+          <div className={menuStyles.optionsGrid}>
+            {/* Menu Option */}
+            {/* <div className={menuStyles.orderOption}>
+                  <div className={menuStyles.orderText}>
+                    <h4
+                      className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
+                    >
+                      Sample Option
+                    </h4>
+                    <p className={menuStyles.optionDescription}>Description</p>
+                  </div>
+                  <div className={menuStyles.priceRow}>
+                    <p className={menuStyles.price}>(P) R$ XX,XX</p>
+                    <p className={menuStyles.price}>(G) R$ XX,XX</p>
+                  </div>
+                </div> */}
+
+            <div className={menuStyles.orderOption}>
+              <div className={menuStyles.orderText}>
+                <h4
+                  className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
+                >
+                  Sample Option
+                </h4>
+                <p className={menuStyles.optionDescription}>Description</p>
+              </div>
+              <div className={menuStyles.priceRow}>
+                <p className={menuStyles.price}>(P) R$ XX,XX</p>
+                <p className={menuStyles.price}>(G) R$ XXX,XX</p>
+              </div>
+            </div>
+
+            <div className={menuStyles.orderOption}>
+              <div className={menuStyles.orderText}>
+                <h4
+                  className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
+                >
+                  Sample Option
+                </h4>
+                <p className={menuStyles.optionDescription}>Description</p>
+              </div>
+              <div className={menuStyles.priceRow}>
+                <p className={menuStyles.price}>(P) R$ XX,XX</p>
+                <p className={menuStyles.price}>(G) R$ XX,XX</p>
+              </div>
+            </div>
+
+            <div className={menuStyles.orderOption}>
+              <div className={menuStyles.orderText}>
+                <h4
+                  className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
+                >
+                  Sample Option
+                </h4>
+                <p className={menuStyles.optionDescription}>Description</p>
+              </div>
+              <div className={menuStyles.priceRow}>
+                <p className={menuStyles.price}>(P) R$ XX,XX</p>
+                <p className={menuStyles.price}>(G) R$ XX,XX</p>
+              </div>
+            </div>
+
+            <div className={menuStyles.orderOption}>
+              <div className={menuStyles.orderText}>
+                <h4
+                  className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
+                >
+                  Sample Option
+                </h4>
+                <p className={menuStyles.optionDescription}>Description</p>
+              </div>
+              <div className={menuStyles.priceRow}>
+                <p className={menuStyles.price}>(P) R$ XX,XX</p>
+                <p className={menuStyles.price}>(G) R$ XX,XX</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="burger-section">
-          <h3 className={generalStyles.sectionSubheading}>Burgueres</h3>
-          <div>
-            <h4 className={generalStyles.contentHeading}>Sample Option</h4>
-            <p>Description</p>
-            <div class="price-row">
-              <p class="price">(U) R$ XX,XX</p>
+
+        <div class="burger-section" className={menuStyles.menuSubsection}>
+          <h3
+            className={`${generalStyles.sectionSubheading} ${menuStyles.subsectionHeading}`}
+          >
+            Burgueres
+          </h3>
+
+          <div className={menuStyles.optionsGrid}>
+            <div className={menuStyles.orderOption}>
+              <div className={menuStyles.orderText}>
+                <h4
+                  className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
+                >
+                  Sample Option
+                </h4>
+                <p className={menuStyles.optionDescription}>Description</p>
+              </div>
+              <div className={menuStyles.priceRow}>
+                <p className={menuStyles.price}>(P) R$ XX,XX</p>
+                <p className={menuStyles.price}>(G) R$ XX,XX</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="appetizer-section">
-          <h3 className={generalStyles.sectionSubheading}>Porções</h3>
-          <div>
-            <h4 className={generalStyles.contentHeading}>Sample Option</h4>
-            <p>Description</p>
-            <div class="price-row">
-              <p class="price">(P) R$ XX,XX</p>
-              <p class="price">(M) R$ XX,XX</p>
-              <p class="price">(G) R$ XX,XX</p>
+
+        <div class="appetizer-section" className={menuStyles.menuSubsection}>
+          <h3
+            className={`${generalStyles.sectionSubheading} ${menuStyles.subsectionHeading}`}
+          >
+            Porções
+          </h3>
+
+          <div className={menuStyles.optionsGrid}>
+            <div className={menuStyles.orderOption}>
+              <div className={menuStyles.orderText}>
+                <h4
+                  className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
+                >
+                  Sample Option
+                </h4>
+                <p className={menuStyles.optionDescription}>Description</p>
+              </div>
+              <div className={menuStyles.priceRow}>
+                <p className={menuStyles.price}>(P) R$ XX,XX</p>
+                <p className={menuStyles.price}>(G) R$ XX,XX</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="smoothies-section">
-          <h3 className={generalStyles.sectionSubheading}>Smoothies</h3>
-          <div>
-            <h4 className={generalStyles.contentHeading}>Sample Option</h4>
-            <p>Description</p>
-            <div class="price-row">
-              <p class="price">(P) R$ XX,XX</p>
-              <p class="price">(M) R$ XX,XX</p>
-              <p class="price">(G) R$ XX,XX</p>
+
+        <div class="smoothies-section" className={menuStyles.menuSubsection}>
+          <h3
+            className={`${generalStyles.sectionSubheading} ${menuStyles.subsectionHeading}`}
+          >
+            Smoothies
+          </h3>
+
+          <div className={menuStyles.optionsGrid}>
+            <div className={menuStyles.orderOption}>
+              <div className={menuStyles.orderText}>
+                <h4
+                  className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
+                >
+                  Sample Option
+                </h4>
+                <p className={menuStyles.optionDescription}>Description</p>
+              </div>
+              <div className={menuStyles.priceRow}>
+                <p className={menuStyles.price}>(P) R$ XX,XX</p>
+                <p className={menuStyles.price}>(G) R$ XX,XX</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="drinks-section">
-          <h3 className={generalStyles.sectionSubheading}>Bebidas</h3>
-          <div>
-            <h4 className={generalStyles.contentHeading}>Sample Option</h4>
-            <p>Description</p>
-            <div class="price-row">
-              <p class="price">(U) R$ XX,XX</p>
+
+        <div class="drinks-section" className={menuStyles.menuSubsection}>
+          <h3
+            className={`${generalStyles.sectionSubheading} ${menuStyles.subsectionHeading}`}
+          >
+            Bebidas
+          </h3>
+
+          <div className={menuStyles.optionsGrid}>
+            <div className={menuStyles.orderOption}>
+              <div className={menuStyles.orderText}>
+                <h4
+                  className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
+                >
+                  Sample Option
+                </h4>
+                <p className={menuStyles.optionDescription}>Description</p>
+              </div>
+              <div className={menuStyles.priceRow}>
+                <p className={menuStyles.price}>(P) R$ XX,XX</p>
+                <p className={menuStyles.price}>(G) R$ XX,XX</p>
+              </div>
             </div>
           </div>
         </div>
