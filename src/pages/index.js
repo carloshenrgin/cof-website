@@ -5,6 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import * as generalStyles from "../styles/general.module.scss"
 import * as heroStyles from "../styles/hero-section.module.scss"
 import * as menuStyles from "../styles/menu-section.module.scss"
+import * as aboutUsStyles from "../styles/about-us.module.scss"
 
 const landingPage = () => {
   return (
@@ -288,41 +289,56 @@ const landingPage = () => {
         </ul>
       </section>
 
-      <section class="section-about-us">
-        <div class="intro-section">
-          <h2 className={generalStyles.sectionHeading}>Sobre Nós</h2>
-          <p class="intro-copy">
+      <section class="section-about-us" className={aboutUsStyles.container}>
+        <h2
+          className={`${generalStyles.sectionHeading} ${aboutUsStyles.aboutHeading}`}
+        >
+          Sobre Nós
+        </h2>
+        <div className={aboutUsStyles.introContainer}>
+          <p className={aboutUsStyles.introCopy}>
             O Contra o Filé é um restaurante de comida vegana que surgiu com a
             proposta de tornar comida saudável e sem produtos de origem animal
             acessível para todos.
           </p>
         </div>
+
         <div class="values-section">
-          <h3 className={generalStyles.sectionSubheading}>Nossos Valores</h3>
-          <div class="values-row">
-            <div class="business-value">
-              <h4 className={generalStyles.contentHeading}>
+          <h3
+            className={`${generalStyles.sectionSubheading} ${aboutUsStyles.ourValues}`}
+          >
+            Nossos Valores
+          </h3>
+          <div className={aboutUsStyles.valuesRow}>
+            <div>
+              <h4
+                className={`${generalStyles.contentHeading} ${aboutUsStyles.valueHeading}`}
+              >
                 COMIDA VEGANA SAUDÁVEL E FRESCA
               </h4>
-              <p>
+              <p className={aboutUsStyles.valueText}>
                 Não importa se você começou ontem no veganismo ou já está no
                 caminho a tempos, temos algo que vai agradar o seu paladar.
               </p>
             </div>
-            <div class="business-value">
-              <h4 className={generalStyles.contentHeading}>
+            <div>
+              <h4
+                className={`${generalStyles.contentHeading} ${aboutUsStyles.valueHeading}`}
+              >
                 PRODUTOS LOCAIS E ORGÂNICOS
               </h4>
-              <p>
+              <p className={aboutUsStyles.valueText}>
                 Trabalhamos com produtos de agricultura familiar e incentivamos
                 a produção de comida local.
               </p>
             </div>
-            <div class="business-value">
-              <h4 className={generalStyles.contentHeading}>
+            <div>
+              <h4
+                className={`${generalStyles.contentHeading} ${aboutUsStyles.valueHeading}`}
+              >
                 ACESSÍVEL À TODOS
               </h4>
-              <p>
+              <p className={aboutUsStyles.valueText}>
                 Comida vegana não precisa ser cara e inacessível, o Contra o
                 Filé tenta democratizar o acesso a esse tipo de produto.
               </p>

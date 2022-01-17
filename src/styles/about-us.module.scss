@@ -1,0 +1,50 @@
+$logo-orange-1: #ea9b58;
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding-top: 8rem;
+}
+
+.about-heading {
+  margin-bottom: 3.2rem;
+}
+
+.about-heading::after {
+  content: "";
+  background-color: $logo-orange-1;
+
+  display: block;
+  height: 0.2rem;
+  width: 8rem;
+  margin: 0 auto;
+  margin-top: 3.2rem;
+}
+
+.intro-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  margin-bottom: 4.8rem;
+}
+
+.intro-copy {
+  font-weight: 300;
+}
+
+.our-values {
+  margin-bottom: 3.2rem;
+}
+
+.values-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.6rem;
+}
+
+.value-heading {
+  margin-bottom: 0.8rem;
+}
+
+.value-text {
+  font-weight: 300;
+}
