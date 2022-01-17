@@ -7,6 +7,7 @@ import * as heroStyles from "../styles/hero-section.module.scss"
 import * as menuStyles from "../styles/menu-section.module.scss"
 import * as aboutUsStyles from "../styles/about-us.module.scss"
 import * as contactStyles from "../styles/contact.module.scss"
+import * as galleryStyles from "../styles/gallery.module.scss"
 
 const landingPage = () => {
   return (
@@ -288,12 +289,128 @@ const landingPage = () => {
         </div>
       </section>
 
-      <section class="section-gallery">
-        <h2 className={generalStyles.sectionHeading}>Galeria</h2>
-        <ul class="dishes-showcase">
-          <li>Imagem #1</li>
-          <li>Imagem #2</li>
-          <li>etc</li>
+      <section class="section-gallery" className={galleryStyles.container}>
+        <ul className={galleryStyles.dishesShowcase}>
+          <li>
+            <figure className={galleryStyles.dishContainer}>
+              <StaticImage
+                src="../images/gallery-001.jpg"
+                alt="Tigela de brócolis com ervilhas e legumes"
+                layout="constrained"
+                className={galleryStyles.dishPhoto}
+              />
+            </figure>
+          </li>
+          <li>
+            <figure className={galleryStyles.dishContainer}>
+              <StaticImage
+                src="../images/gallery-002.jpg"
+                alt="Arroz integral com legumes"
+                layout="constrained"
+                className={galleryStyles.dishPhoto}
+              />
+            </figure>
+          </li>
+          <li>
+            <figure className={galleryStyles.dishContainer}>
+              <StaticImage
+                src="../images/gallery-003.jpg"
+                alt="Salada de grãos, legumes e frutas secas"
+                layout="constrained"
+                className={galleryStyles.dishPhoto}
+              />
+            </figure>
+          </li>
+          <li>
+            <figure className={galleryStyles.dishContainer}>
+              <StaticImage
+                src="../images/gallery-004.jpg"
+                alt="Salada com abacate e manga"
+                layout="constrained"
+                className={galleryStyles.dishPhoto}
+              />
+            </figure>
+          </li>
+          <li>
+            <figure className={galleryStyles.dishContainer}>
+              <StaticImage
+                src="../images/gallery-005.jpg"
+                alt="Salada de verduras com rabanete e tomate cereja"
+                layout="constrained"
+                className={galleryStyles.dishPhoto}
+              />
+            </figure>
+          </li>
+          <li>
+            <figure className={galleryStyles.dishContainer}>
+              <StaticImage
+                src="../images/gallery-006.jpg"
+                alt="Salada de verduras com brócolis"
+                layout="constrained"
+                className={galleryStyles.dishPhoto}
+              />
+            </figure>
+          </li>
+          <li>
+            <figure className={galleryStyles.dishContainer}>
+              <StaticImage
+                src="../images/gallery-007.jpg"
+                alt="Salada com watermelon radishes"
+                layout="constrained"
+                className={galleryStyles.dishPhoto}
+              />
+            </figure>
+          </li>
+          <li>
+            <figure className={galleryStyles.dishContainer}>
+              <StaticImage
+                src="../images/gallery-008.jpg"
+                alt="Salada com tofu e azeitona"
+                layout="constrained"
+                className={galleryStyles.dishPhoto}
+              />
+            </figure>
+          </li>
+          <li>
+            <figure className={galleryStyles.dishContainer}>
+              <StaticImage
+                src="../images/gallery-009.jpg"
+                alt="Suco de laranja com cenoura"
+                layout="constrained"
+                className={galleryStyles.dishPhoto}
+              />
+            </figure>
+          </li>
+          <li>
+            <figure className={galleryStyles.dishContainer}>
+              <StaticImage
+                src="../images/gallery-010.jpg"
+                alt="Smoothie de maçã com mirtilo"
+                layout="constrained"
+                className={galleryStyles.dishPhoto}
+              />
+            </figure>
+          </li>
+          <li>
+            <figure className={galleryStyles.dishContainer}>
+              <StaticImage
+                src="../images/gallery-011.jpg"
+                alt="Hamburguer vegano"
+                layout="constrained"
+                className={galleryStyles.dishPhoto}
+              />
+            </figure>
+          </li>
+          <li>
+            <figure className={galleryStyles.dishContainer}>
+              <StaticImage
+                src="../images/gallery-012.jpg"
+                alt="Porção de fritas"
+                layout="constrained"
+                className={galleryStyles.dishPhoto}
+              />
+            </figure>
+          </li>
         </ul>
       </section>
 

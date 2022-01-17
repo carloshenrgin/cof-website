@@ -1,0 +1,27 @@
+$logo-orange-1: #ea9b58;
+
+.container {
+  padding-top: 8rem;
+}
+
+.dishes-showcase {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.dish-container {
+  background-color: #000;
+  overflow: hidden;
+}
+
+.dish-photo {
+  opacity: 0.7;
+  transform: scale(1.15);
+  transition: transform 0.5s;
+}
+
+.dish-container:hover .dish-photo {
+  opacity: 1;
+  transform: scale(1);
+}
