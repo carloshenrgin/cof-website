@@ -43,6 +43,13 @@ $logo-green-shade-1: #3d570e;
   display: inline-block;
 }
 
+.menu-btn:hover,
+.menu-btn:active {
+  background-color: $logo-green-shade-1;
+  color: #fff;
+  border: 1px solid $logo-green-shade-1;
+}
+
 .menu-subsection {
   margin-bottom: 4.8rem;
 }
@@ -55,7 +62,7 @@ $logo-green-shade-1: #3d570e;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 2.4rem;
-  row-gap: 2.4rem;
+  row-gap: 3.2rem;
 }
 
 .order-option {
@@ -65,7 +72,7 @@ $logo-green-shade-1: #3d570e;
 }
 
 .option-heading {
-  margin-bottom: 1.6rem;
+  margin-bottom: 0.8rem;
 }
 
 .option-description {
