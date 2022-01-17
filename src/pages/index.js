@@ -9,9 +9,12 @@ import * as aboutUsStyles from "../styles/about-us.module.scss"
 import * as contactStyles from "../styles/contact.module.scss"
 import * as galleryStyles from "../styles/gallery.module.scss"
 
+import ModalAlert from "../components/modal-alert"
+
 const landingPage = () => {
   return (
     <div>
+      <ModalAlert />
       <header className={heroStyles.heroSection}>
         <nav className={`${heroStyles.container} ${heroStyles.navBar}`}>
           <StaticImage
