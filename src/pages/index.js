@@ -97,13 +97,8 @@ const landingPage = () => {
               </a>
             </li>
             <li>
-<<<<<<< HEAD
               <a href="#snacks" className={menuStyles.menuBtn}>
                 Lanches
-=======
-              <a href="#appetizers" className={menuStyles.menuBtn}>
-                Porções
->>>>>>> 21c895ddda19d670a0d459d9a59198090a6e1a3b
               </a>
             </li>
             <li>
@@ -233,11 +228,7 @@ const landingPage = () => {
           </div>
         </div>
 
-<<<<<<< HEAD
         <div id="snacks" className={menuStyles.menuSubsection}>
-=======
-        <div id="appetizers" className={menuStyles.menuSubsection}>
->>>>>>> 21c895ddda19d670a0d459d9a59198090a6e1a3b
           <h3
             className={`${generalStyles.sectionSubheading} ${menuStyles.subsectionHeading}`}
           >
@@ -445,7 +436,7 @@ const landingPage = () => {
           Sobre Nós
         </h2>
         <div className={aboutUsStyles.introContainer}>
-          <p className={aboutUsStyles.introCopy}>
+          <p>
             O Contra o Filé é um restaurante de comida vegana que surgiu com a
             proposta de tornar comida saudável e sem produtos de origem animal
             acessível para todos.
