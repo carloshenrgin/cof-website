@@ -46,11 +46,15 @@ const landingPage = () => {
 
         <div className={heroStyles.heroTextContainer}>
           <div className={heroStyles.heroText}>
-            <h1 className={generalStyles.pageHeading}>
+            <h1
+              className={`${generalStyles.pageHeading} ${heroStyles.heroHeading}`}
+            >
               Saudável. Delicioso.
               <span className={heroStyles.headingAccent}> Vegano.</span>
             </h1>
-            <p>Uma opção saudável e acessível para todos.</p>
+            <p className={heroStyles.heroCopy}>
+              Uma opção saudável e acessível para todos.
+            </p>
             <a className={`${heroStyles.btn} ${heroStyles.ctaBtn}`} href="#">
               Tô com fome
             </a>
@@ -125,7 +129,10 @@ const landingPage = () => {
                 >
                   Sample Option
                 </h4>
-                <p className={menuStyles.optionDescription}>Description</p>
+                <p className={menuStyles.optionDescription}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
               </div>
               <div className={menuStyles.priceRow}>
                 <p className={menuStyles.price}>(P) R$ XX,XX</p>
