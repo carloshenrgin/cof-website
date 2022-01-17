@@ -12,6 +12,7 @@ const landingPage = () => {
           <StaticImage
             src="../images/cof-logo-cropped-compressed.png"
             alt="Contra o Filé Logo"
+            layout="constrained"
             className={heroStyles.logoImg}
           />
 
@@ -39,12 +40,17 @@ const landingPage = () => {
           </ul>
         </nav>
 
-        <div class="hero-textbox">
-          <h1>Saudável. Delicioso. Vegano.</h1>
-          <p>Uma opção saudável e acessível para todos.</p>
-          <a className={heroStyles.btn} href="#">
-            Tô com fome
-          </a>
+        <div className={heroStyles.heroTextContainer}>
+          <div className={heroStyles.heroText}>
+            <h1>
+              Saudável. Delicioso.
+              <span className={heroStyles.headingAccent}> Vegano.</span>
+            </h1>
+            <p>Uma opção saudável e acessível para todos.</p>
+            <a className={`${heroStyles.btn} ${heroStyles.ctaBtn}`} href="#">
+              Tô com fome
+            </a>
+          </div>
         </div>
       </header>
 
