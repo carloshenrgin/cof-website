@@ -23,22 +23,34 @@ const landingPage = () => {
 
           <ul className={heroStyles.mainNav}>
             <li>
-              <a href="#" className={`${heroStyles.btn} ${heroStyles.navBtn}`}>
+              <a
+                href="#menu"
+                className={`${heroStyles.btn} ${heroStyles.navBtn}`}
+              >
                 Cardápio
               </a>
             </li>
             <li>
-              <a href="#" className={`${heroStyles.btn} ${heroStyles.navBtn}`}>
+              <a
+                href="#gallery"
+                className={`${heroStyles.btn} ${heroStyles.navBtn}`}
+              >
                 Galeria
               </a>
             </li>
             <li>
-              <a href="#" className={`${heroStyles.btn} ${heroStyles.navBtn}`}>
+              <a
+                href="#about-us"
+                className={`${heroStyles.btn} ${heroStyles.navBtn}`}
+              >
                 Sobre Nós
               </a>
             </li>
             <li>
-              <a href="#" className={`${heroStyles.btn} ${heroStyles.navBtn}`}>
+              <a
+                href="#contact"
+                className={`${heroStyles.btn} ${heroStyles.navBtn}`}
+              >
                 Contato
               </a>
             </li>
@@ -56,14 +68,17 @@ const landingPage = () => {
             <p className={heroStyles.heroCopy}>
               Uma opção saudável e acessível para todos.
             </p>
-            <a className={`${heroStyles.btn} ${heroStyles.ctaBtn}`} href="#">
+            <a
+              className={`${heroStyles.btn} ${heroStyles.ctaBtn}`}
+              href="#menu"
+            >
               Tô com fome
             </a>
           </div>
         </div>
       </header>
 
-      <section class="section-menu" className={menuStyles.container}>
+      <section id="menu" className={menuStyles.container}>
         <h2
           className={`${generalStyles.sectionHeading} ${menuStyles.menuHeading}`}
         >
@@ -72,34 +87,34 @@ const landingPage = () => {
         <nav>
           <ul className={menuStyles.menuNav}>
             <li>
-              <a href="#" className={menuStyles.menuBtn}>
+              <a href="#packed-lunches" className={menuStyles.menuBtn}>
                 Marmitas
               </a>
             </li>
             <li>
-              <a href="#" className={menuStyles.menuBtn}>
+              <a href="#burgers" className={menuStyles.menuBtn}>
                 Burgueres
               </a>
             </li>
             <li>
-              <a href="#" className={menuStyles.menuBtn}>
+              <a href="#appetizers" className={menuStyles.menuBtn}>
                 Porções
               </a>
             </li>
             <li>
-              <a href="#" className={menuStyles.menuBtn}>
+              <a href="#smoothies" className={menuStyles.menuBtn}>
                 Smoothies
               </a>
             </li>
             <li>
-              <a href="#" className={menuStyles.menuBtn}>
+              <a href="#drinks" className={menuStyles.menuBtn}>
                 Bebidas
               </a>
             </li>
           </ul>
         </nav>
 
-        <div class="packed-lunch-section" className={menuStyles.menuSubsection}>
+        <div id="packed-lunches" className={menuStyles.menuSubsection}>
           <h3
             className={`${generalStyles.sectionSubheading} ${menuStyles.subsectionHeading}`}
           >
@@ -188,7 +203,7 @@ const landingPage = () => {
           </div>
         </div>
 
-        <div class="burger-section" className={menuStyles.menuSubsection}>
+        <div id="burgers" className={menuStyles.menuSubsection}>
           <h3
             className={`${generalStyles.sectionSubheading} ${menuStyles.subsectionHeading}`}
           >
@@ -213,7 +228,7 @@ const landingPage = () => {
           </div>
         </div>
 
-        <div class="appetizer-section" className={menuStyles.menuSubsection}>
+        <div id="appetizers" className={menuStyles.menuSubsection}>
           <h3
             className={`${generalStyles.sectionSubheading} ${menuStyles.subsectionHeading}`}
           >
@@ -238,7 +253,7 @@ const landingPage = () => {
           </div>
         </div>
 
-        <div class="smoothies-section" className={menuStyles.menuSubsection}>
+        <div id="smoothies" className={menuStyles.menuSubsection}>
           <h3
             className={`${generalStyles.sectionSubheading} ${menuStyles.subsectionHeading}`}
           >
@@ -263,7 +278,7 @@ const landingPage = () => {
           </div>
         </div>
 
-        <div class="drinks-section" className={menuStyles.menuSubsection}>
+        <div id="drinks" className={menuStyles.menuSubsection}>
           <h3
             className={`${generalStyles.sectionSubheading} ${menuStyles.subsectionHeading}`}
           >
@@ -289,7 +304,7 @@ const landingPage = () => {
         </div>
       </section>
 
-      <section class="section-gallery" className={galleryStyles.container}>
+      <section id="gallery" className={galleryStyles.container}>
         <ul className={galleryStyles.dishesShowcase}>
           <li>
             <figure className={galleryStyles.dishContainer}>
@@ -414,7 +429,7 @@ const landingPage = () => {
         </ul>
       </section>
 
-      <section class="section-about-us" className={aboutUsStyles.container}>
+      <section id="about-us" className={aboutUsStyles.container}>
         <h2
           className={`${generalStyles.sectionHeading} ${aboutUsStyles.aboutHeading}`}
         >
@@ -472,7 +487,7 @@ const landingPage = () => {
         </div>
       </section>
 
-      <footer class="section-contact" className={contactStyles.contactSection}>
+      <footer id="contact" className={contactStyles.contactSection}>
         <div className={contactStyles.container}>
           <div className={contactStyles.column}>
             <h2
