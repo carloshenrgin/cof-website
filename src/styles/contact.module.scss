@@ -1,0 +1,42 @@
+.contact-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/contact-section-bg.jpg);
+  color: #fff;
+  background-position: 50%;
+  background-size: 100% auto;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 12.8rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.column {
+  max-width: 45rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.column-heading {
+  margin-bottom: 3.2rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+.contact-copy {
+  font-weight: 300;
+  line-height: 1.15;
+  margin-bottom: 0.4rem;
+  text-align: center;
+}

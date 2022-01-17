@@ -6,6 +6,7 @@ import * as generalStyles from "../styles/general.module.scss"
 import * as heroStyles from "../styles/hero-section.module.scss"
 import * as menuStyles from "../styles/menu-section.module.scss"
 import * as aboutUsStyles from "../styles/about-us.module.scss"
+import * as contactStyles from "../styles/contact.module.scss"
 
 const landingPage = () => {
   return (
@@ -347,24 +348,42 @@ const landingPage = () => {
         </div>
       </section>
 
-      <footer class="section-contact">
-        <div class="contact-column">
-          <h2 className={generalStyles.sectionHeading}>CONTATO</h2>
-          <div class="contact-info">
-            <p>Rua Alfredo Lopes 1717 - Jardim Macarengo</p>
-            <p>São Carlos - SP, 13560460</p>
-            <p>(16) 98765-1234 - Whatsapp</p>
+      <footer class="section-contact" className={contactStyles.contactSection}>
+        <div className={contactStyles.container}>
+          <div className={contactStyles.column}>
+            <h2
+              className={`${generalStyles.sectionHeading} ${contactStyles.columnHeading}`}
+            >
+              CONTATO
+            </h2>
+            <div className={contactStyles.contactInfo}>
+              <p className={contactStyles.contactCopy}>
+                Rua Alfredo Lopes 1717 - Jardim Macarengo
+              </p>
+              <p className={contactStyles.contactCopy}>
+                São Carlos - SP, 13560460
+              </p>
+              <p className={contactStyles.contactCopy}>
+                (16) 98765-1234 - Whatsapp
+              </p>
+            </div>
+            <p className={contactStyles.contactCopy}>
+              Atendemos presencialmente, via Whatsapp e aplicativo de entrega
+            </p>
           </div>
-          <p>Atendemos presencialmente, via Whatsapp e aplicativo de entrega</p>
-        </div>
-        <div class="hours-column">
-          <h2 className={generalStyles.sectionHeading}>HORÁRIOS</h2>
-          <p>
-            <i>Segunda - Sábado</i> | 11:00 - 15:00
-          </p>
-          <p>
-            <i>Domingo</i> | Fechado
-          </p>
+          <div className={contactStyles.column}>
+            <h2
+              className={`${generalStyles.sectionHeading} ${contactStyles.columnHeading}`}
+            >
+              HORÁRIOS
+            </h2>
+            <p className={contactStyles.contactCopy}>
+              <i>Segunda - Sábado</i> | 11:00 - 15:00
+            </p>
+            <p className={contactStyles.contactCopy}>
+              <i>Domingo</i> | Fechado
+            </p>
+          </div>
         </div>
       </footer>
     </div>
