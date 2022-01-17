@@ -102,7 +102,7 @@ const landingPage = () => {
           <div className={menuStyles.optionsGrid}>
             {/* Menu Option */}
             {/* <div className={menuStyles.orderOption}>
-                  <div className={menuStyles.orderText}>
+                  <div >
                     <h4
                       className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
                     >
@@ -117,7 +117,7 @@ const landingPage = () => {
                 </div> */}
 
             <div className={menuStyles.orderOption}>
-              <div className={menuStyles.orderText}>
+              <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
                 >
@@ -132,7 +132,7 @@ const landingPage = () => {
             </div>
 
             <div className={menuStyles.orderOption}>
-              <div className={menuStyles.orderText}>
+              <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
                 >
@@ -147,7 +147,7 @@ const landingPage = () => {
             </div>
 
             <div className={menuStyles.orderOption}>
-              <div className={menuStyles.orderText}>
+              <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
                 >
@@ -162,7 +162,7 @@ const landingPage = () => {
             </div>
 
             <div className={menuStyles.orderOption}>
-              <div className={menuStyles.orderText}>
+              <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
                 >
@@ -187,7 +187,7 @@ const landingPage = () => {
 
           <div className={menuStyles.optionsGrid}>
             <div className={menuStyles.orderOption}>
-              <div className={menuStyles.orderText}>
+              <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
                 >
@@ -212,7 +212,7 @@ const landingPage = () => {
 
           <div className={menuStyles.optionsGrid}>
             <div className={menuStyles.orderOption}>
-              <div className={menuStyles.orderText}>
+              <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
                 >
@@ -237,7 +237,7 @@ const landingPage = () => {
 
           <div className={menuStyles.optionsGrid}>
             <div className={menuStyles.orderOption}>
-              <div className={menuStyles.orderText}>
+              <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
                 >
@@ -262,7 +262,7 @@ const landingPage = () => {
 
           <div className={menuStyles.optionsGrid}>
             <div className={menuStyles.orderOption}>
-              <div className={menuStyles.orderText}>
+              <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
                 >
