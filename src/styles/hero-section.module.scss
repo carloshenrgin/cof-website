@@ -91,3 +91,11 @@ $logo-green: #7bb41c;
     background-position: 30%;
   }
 }
+
+// FOR SMALLER PORTRAIT TABLETS (MAX WIDTH OF 768px = 48em)
+@media (max-width: 48em) {
+  .container,
+  .hero-text-container {
+    padding: 0 3.2rem;
+  }
+}

@@ -50,3 +50,15 @@ $logo-orange-1: #ea9b58;
   font-weight: 300;
   line-height: 1.25;
 }
+
+// MEDIA QUERIES
+
+// FOR SMALLER PORTRAIT TABLETS (MAX WIDTH OF 768px = 48em)
+@media (max-width: 48em) {
+  .container {
+    padding: 12.8rem 3.2rem;
+  }
+  .values-row {
+    gap: 3.2rem;
+  }
+}
