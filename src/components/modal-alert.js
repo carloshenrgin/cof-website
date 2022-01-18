@@ -7,12 +7,15 @@ const ModalAlert = () => {
     var modal = document.getElementsByClassName(`${modalStyles.alertModal}`)
     var close = document.getElementsByClassName(`${modalStyles.closeBtn}`)
     var gotIt = document.getElementsByClassName(`${modalStyles.gotItBtn}`)
+    document.body.style.overflow = "hidden"
 
     close[0].onclick = function () {
       modal[0].style.display = "none"
+      document.body.style.overflow = "visible"
     }
     gotIt[0].onclick = function () {
       modal[0].style.display = "none"
+      document.body.style.overflow = "visible"
     }
   })
 
