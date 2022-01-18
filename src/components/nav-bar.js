@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <div className={rowClasses.join("")}>
       <nav className={`${navStyles.container} ${navStyles.navBar}`}>
-        <a href="/#">
+        <a href="#home">
           <StaticImage
             src="../images/cof-logo-cropped-compressed.png"
             alt="Contra o Filé Logo"

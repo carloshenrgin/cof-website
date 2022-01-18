@@ -16,7 +16,7 @@ const landingPage = () => {
   return (
     <div>
       <ModalAlert />
-      <header className={heroStyles.heroSection}>
+      <header id="home" className={heroStyles.heroSection}>
         <Navbar />
 
         <div className={heroStyles.heroTextContainer}>

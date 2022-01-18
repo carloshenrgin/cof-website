@@ -49,7 +49,7 @@ const ModalAlert = () => {
           {/* <button className={`${modalStyles.gotItBtn}`}>
             <span className={`${modalStyles.btnText}`}>Entendido</span>
           </button> */}
-          <a className={`${modalStyles.gotItBtn}`} href="/#">
+          <a className={`${modalStyles.gotItBtn}`} href="/#home">
             Entendido
           </a>
         </div>
