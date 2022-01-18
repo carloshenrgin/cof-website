@@ -17,25 +17,27 @@ const landingPage = () => {
     <div>
       <ModalAlert />
       <header id="home" className={heroStyles.heroSection}>
-        <Navbar />
+        <div className={heroStyles.container}>
+          <Navbar />
 
-        <div className={heroStyles.heroTextContainer}>
-          <div className={heroStyles.heroText}>
-            <h1
-              className={`${generalStyles.pageHeading} ${heroStyles.heroHeading}`}
-            >
-              Saudável. Delicioso.
-              <span className={heroStyles.headingAccent}> Vegano.</span>
-            </h1>
-            <p className={heroStyles.heroCopy}>
-              Uma opção saudável e acessível para todos.
-            </p>
-            <a
-              className={`${heroStyles.btn} ${heroStyles.ctaBtn}`}
-              href="#menu"
-            >
-              Tô com fome
-            </a>
+          <div className={heroStyles.heroTextContainer}>
+            <div className={heroStyles.heroText}>
+              <h1
+                className={`${generalStyles.pageHeading} ${heroStyles.heroHeading}`}
+              >
+                Saudável. Delicioso.
+                <span className={heroStyles.headingAccent}> Vegano.</span>
+              </h1>
+              <p className={heroStyles.heroCopy}>
+                Uma opção saudável e acessível para todos.
+              </p>
+              <a
+                className={`${heroStyles.btn} ${heroStyles.ctaBtn}`}
+                href="#menu"
+              >
+                Tô com fome
+              </a>
+            </div>
           </div>
         </div>
       </header>

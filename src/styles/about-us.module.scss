@@ -3,11 +3,12 @@ $logo-orange-1: #ea9b58;
 .container {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 12.8rem 0;
+  // padding: 12.8rem 1.2rem;
+  padding: 12.8rem 2%;
 }
 
 .about-heading {
-  margin-bottom: 3.2rem;
+  margin-bottom: 4.8rem;
 }
 
 .about-heading::after {
