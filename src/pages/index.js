@@ -754,8 +754,8 @@ const landingPage = () => {
           >
             Nossos Valores
           </h3>
-          <div className={aboutUsStyles.valuesRow}>
-            <div>
+          <ul className={aboutUsStyles.valuesRow}>
+            <li>
               <h4
                 className={`${generalStyles.contentHeading} ${aboutUsStyles.valueHeading}`}
               >
@@ -765,8 +765,8 @@ const landingPage = () => {
                 Não importa se você começou ontem no veganismo ou já está no
                 caminho a tempos, temos algo que vai agradar o seu paladar.
               </p>
-            </div>
-            <div>
+            </li>
+            <li>
               <h4
                 className={`${generalStyles.contentHeading} ${aboutUsStyles.valueHeading}`}
               >
@@ -776,8 +776,8 @@ const landingPage = () => {
                 Trabalhamos com produtos de agricultura familiar e incentivamos
                 a produção de comida local.
               </p>
-            </div>
-            <div>
+            </li>
+            <li>
               <h4
                 className={`${generalStyles.contentHeading} ${aboutUsStyles.valueHeading}`}
               >
@@ -787,8 +787,8 @@ const landingPage = () => {
                 Comida vegana não precisa ser cara e inacessível, o Contra o
                 Filé tenta democratizar o acesso a esse tipo de produto.
               </p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
 
