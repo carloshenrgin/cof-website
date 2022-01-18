@@ -28,19 +28,20 @@ const Navbar = () => {
   return (
     <div className={rowClasses.join("")}>
       <nav className={`${navStyles.container} ${navStyles.navBar}`}>
-        <StaticImage
-          src="../images/cof-logo-cropped-compressed.png"
-          alt="Contra o Filé Logo"
-          layout="constrained"
-          className={navStyles.logoImgHero}
-        />
-
-        <StaticImage
-          src="../images/cof-logo-sticky-cropped-compressed.png"
-          alt="Contra o Filé Logo"
-          layout="constrained"
-          className={navStyles.logoImgSticky}
-        />
+        <a href="/#">
+          <StaticImage
+            src="../images/cof-logo-cropped-compressed.png"
+            alt="Contra o Filé Logo"
+            layout="constrained"
+            className={navStyles.logoImgHero}
+          />
+          <StaticImage
+            src="../images/cof-logo-sticky-cropped-compressed.png"
+            alt="Contra o Filé Logo"
+            layout="constrained"
+            className={navStyles.logoImgSticky}
+          />
+        </a>
 
         <ul className={navStyles.mainNav}>
           <li>
