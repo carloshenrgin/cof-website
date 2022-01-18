@@ -1,0 +1,67 @@
+$logo-orange-1: #ea9b58;
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem 0.8rem;
+}
+
+.logo-img-hero {
+  max-width: 12.8rem;
+}
+
+.logo-img-sticky {
+  display: none;
+}
+
+.main-nav {
+  display: flex;
+  list-style: none;
+  gap: 7.2rem;
+}
+
+.nav-btn:link,
+.nav-btn:visited {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.8rem 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.nav-btn:hover,
+.nav-btn:active {
+  border-bottom: 2px solid $logo-orange-1;
+}
+
+.scrolled {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  color: #424242;
+  width: 100%;
+  box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.1);
+
+  z-index: 1;
+}
+
+.scrolled .nav-btn:link,
+.scrolled .nav-btn:visited {
+  color: #424242;
+  margin-bottom: 12.8rem;
+}
+
+.scrolled .logo-img-hero {
+  display: none;
+}
+
+.scrolled .logo-img-sticky {
+  display: block;
+  max-width: 17.2rem;
+}

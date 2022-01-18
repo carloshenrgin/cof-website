@@ -10,55 +10,14 @@ import * as contactStyles from "../styles/contact.module.scss"
 import * as galleryStyles from "../styles/gallery.module.scss"
 
 import ModalAlert from "../components/modal-alert"
+import Navbar from "../components/nav-bar"
 
 const landingPage = () => {
   return (
     <div>
       <ModalAlert />
       <header className={heroStyles.heroSection}>
-        <nav className={`${heroStyles.container} ${heroStyles.navBar}`}>
-          <StaticImage
-            src="../images/cof-logo-cropped-compressed.png"
-            alt="Contra o Filé Logo"
-            layout="constrained"
-            className={heroStyles.logoImg}
-          />
-
-          <ul className={heroStyles.mainNav}>
-            <li>
-              <a
-                href="#menu"
-                className={`${heroStyles.btn} ${heroStyles.navBtn}`}
-              >
-                Cardápio
-              </a>
-            </li>
-            <li>
-              <a
-                href="#gallery"
-                className={`${heroStyles.btn} ${heroStyles.navBtn}`}
-              >
-                Galeria
-              </a>
-            </li>
-            <li>
-              <a
-                href="#about-us"
-                className={`${heroStyles.btn} ${heroStyles.navBtn}`}
-              >
-                Sobre Nós
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                className={`${heroStyles.btn} ${heroStyles.navBtn}`}
-              >
-                Contato
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <Navbar />
 
         <div className={heroStyles.heroTextContainer}>
           <div className={heroStyles.heroText}>
