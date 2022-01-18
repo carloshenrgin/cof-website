@@ -29,6 +29,9 @@ $logo-orange-1: #ea9b58;
 
 // MEDIA QUERIES
 
-// FOR LANDSCAPE TABLETS (MAX WIDTH OF 1088px = 68em
-@media (max-width: 68em) {
+// FOR PORTRAIT TABLETS (MAX WIDTH OF 880px = 55em)
+@media (max-width: 55em) {
+  .dishes-showcase {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

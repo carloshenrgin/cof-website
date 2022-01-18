@@ -41,3 +41,17 @@
   margin-bottom: 0.4rem;
   text-align: center;
 }
+
+// MEDIA QUERIES
+
+// FOR PORTRAIT TABLETS (MAX WIDTH OF 880px = 55em)
+@media (max-width: 55em) {
+  .contact-section {
+    background-size: auto 100%;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    row-gap: 4.8rem;
+  }
+}

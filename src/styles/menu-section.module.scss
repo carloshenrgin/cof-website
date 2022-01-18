@@ -95,3 +95,13 @@ $logo-green-shade-1: #3d570e;
   font-weight: 500;
   color: $logo-green-shade-1;
 }
+
+// MEDIA QUERIES
+
+// FOR PORTRAIT TABLETS (MAX WIDTH OF 880px = 55em)
+@media (max-width: 55em) {
+  .options-grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4.8rem;
+  }
+}

@@ -78,9 +78,16 @@ $logo-green: #7bb41c;
 
 // MEDIA QUERIES
 
-// FOR LANDSCAPE TABLETS (MAX WIDTH OF 1088px = 68em
+// FOR LANDSCAPE TABLETS (MAX WIDTH OF 1088px = 68em)
 @media (max-width: 68em) {
   .hero-section {
     background-position: 25%;
+  }
+}
+
+// FOR PORTRAIT TABLETS (MAX WIDTH OF 880px = 55em)
+@media (max-width: 55em) {
+  .hero-section {
+    background-position: 30%;
   }
 }
