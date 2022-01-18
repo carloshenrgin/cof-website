@@ -1,5 +1,4 @@
 import React, { useEffect } from "react"
-import { ModalRoutingContext } from "gatsby-plugin-modal-routing-3"
 import * as generalStyles from "../styles/general.module.scss"
 import * as modalStyles from "../styles/modal.module.scss"
 
@@ -9,11 +8,11 @@ const ModalAlert = () => {
     var close = document.getElementsByClassName(`${modalStyles.closeBtn}`)
     var gotIt = document.getElementsByClassName(`${modalStyles.gotItBtn}`)
 
-    close.onclick = function () {
-      modal.style.display = "none"
+    close[0].onclick = function () {
+      modal[0].style.display = "none"
     }
-    gotIt.onclick = function () {
-      modal.style.display = "none"
+    gotIt[0].onclick = function () {
+      modal[0].style.display = "none"
     }
   })
 
@@ -45,9 +44,14 @@ const ModalAlert = () => {
           </h2>
           <p className={`${modalStyles.modalText}`}>
             Devido à pandemia, temos atendido apenas via delivery. Quando a
-            situação se normalizar, voltaremos a atender presencialmente.
+            situação se normalizar voltaremos a atender presencialmente.
           </p>
-          <button className={`${modalStyles.gotItBtn}`}>Entendido</button>
+          {/* <button className={`${modalStyles.gotItBtn}`}>
+            <span className={`${modalStyles.btnText}`}>Entendido</span>
+          </button> */}
+          <a className={`${modalStyles.gotItBtn}`} href="/#">
+            Entendido
+          </a>
         </div>
       </div>
     </div>

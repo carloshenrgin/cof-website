@@ -63,7 +63,7 @@ $logo-orange-2-shade-2: #997032;
 
 .modal-text {
   color: $logo-orange-2-shade-1;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 300;
   line-height: 1.2;
   text-align: center;
@@ -72,11 +72,22 @@ $logo-orange-2-shade-2: #997032;
 }
 
 .got-it-btn {
-  color: #fff;
+  color: $logo-orange-2-shade-1;
+  font-size: 2rem;
+  font-weight: 300;
+  text-decoration: none;
+
   display: inline-block;
-  border: none;
   cursor: pointer;
 
   padding: 1.6rem 3.2rem;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid $logo-orange-2-shade-1;
+}
+
+.got-it-btn:hover,
+.got-it-btn:active {
   background-color: $logo-orange-2-shade-1;
+  color: #fff;
+  border: 1px solid $logo-orange-2-shade-1;
 }
