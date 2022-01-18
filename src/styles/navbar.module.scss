@@ -68,3 +68,88 @@ $logo-orange-1: #ea9b58;
   margin: 0 auto;
   padding: 1.6rem 4.8rem;
 }
+
+// MOBILE NAVIGATION
+.mobile-nav {
+  display: none;
+}
+
+// MEDIA QUERIES
+
+// FOR SMALLER PORTRAIT TABLETS (MAX WIDTH OF 768px = 48em)
+@media (max-width: 48em) {
+  .main-nav {
+    display: none;
+  }
+
+  .nav-display .main-nav {
+    display: flex;
+
+    flex-direction: column;
+    gap: 4.8rem;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+
+    width: 100%;
+    height: 100vh;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1;
+  }
+
+  .mobile-nav {
+    display: block;
+    z-index: 1;
+  }
+
+  .nav-btn:link,
+  .nav-btn:visited {
+    font-size: 2.8rem;
+  }
+
+  .scrolled .nav-btn:link,
+  .scrolled .nav-btn:visited {
+    color: #fff;
+  }
+
+  .nav-open,
+  .nav-close {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .open-btn,
+  .close-btn {
+    stroke: #fff;
+    width: 3.2rem;
+    height: 3.2rem;
+    cursor: pointer;
+  }
+
+  .scrolled .open-btn {
+    stroke: #424242;
+  }
+
+  .nav-close {
+    display: none;
+    // to make z-index work
+    position: relative;
+    z-index: 1;
+  }
+
+  .nav-display .nav-open {
+    display: none;
+  }
+
+  .nav-display .nav-close {
+    display: block;
+  }
+}
