@@ -75,3 +75,12 @@ $logo-green: #7bb41c;
   background-color: $logo-orange-1;
   border: 1px solid $logo-orange-1;
 }
+
+// MEDIA QUERIES
+
+// FOR LANDSCAPE TABLETS (MAX WIDTH OF 1088px = 68em
+@media (max-width: 68em) {
+  .hero-section {
+    background-position: 25%;
+  }
+}

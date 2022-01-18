@@ -12,8 +12,8 @@ $logo-orange-1: #ea9b58;
 }
 
 .dish-container {
-  background-color: #000;
   overflow: hidden;
+  background-color: #000;
 }
 
 .dish-photo {
@@ -25,4 +25,10 @@ $logo-orange-1: #ea9b58;
 .dish-container:hover .dish-photo {
   opacity: 1;
   transform: scale(1);
+}
+
+// MEDIA QUERIES
+
+// FOR LANDSCAPE TABLETS (MAX WIDTH OF 1088px = 68em
+@media (max-width: 68em) {
 }

@@ -77,3 +77,13 @@ li {
 a {
   font-size: 1.6rem;
 }
+
+// MEDIA QUERIES
+
+// FOR LANDSCAPE TABLETS (MAX WIDTH OF 1088px = 68em
+@media (max-width: 68em) {
+  html {
+    // reducing general font-size to 9px (default)
+    font-size: 56.25%;
+  }
+}
