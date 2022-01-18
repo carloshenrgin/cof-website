@@ -60,6 +60,7 @@ $logo-green-shade-1: #3d570e;
 }
 
 .options-grid {
+  list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 3.6rem;

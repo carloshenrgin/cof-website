@@ -85,9 +85,9 @@ const landingPage = () => {
             Marmitas
           </h3>
 
-          <div className={menuStyles.optionsGrid}>
+          <ul className={menuStyles.optionsGrid}>
             {/* Menu Option */}
-            {/* <div className={menuStyles.orderOption}>
+            {/* <li className={menuStyles.orderOption}>
                   <div >
                     <h4
                       className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -100,9 +100,9 @@ const landingPage = () => {
                     <p className={menuStyles.price}>(P) R$ XX,XX</p>
                     <p className={menuStyles.price}>(G) R$ XX,XX</p>
                   </div>
-                </div> */}
+                </li> */}
 
-            <div className={menuStyles.orderOption}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -118,9 +118,9 @@ const landingPage = () => {
                 <p className={menuStyles.price}>(P) R$12,00</p>
                 <p className={menuStyles.price}>(G) R$16,00</p>
               </div>
-            </div>
+            </li>
 
-            <div className={menuStyles.orderOption}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -135,9 +135,9 @@ const landingPage = () => {
                 <p className={menuStyles.price}>(P) R$13,00</p>
                 <p className={menuStyles.price}>(G) R$18,00</p>
               </div>
-            </div>
+            </li>
 
-            <div className={menuStyles.orderOption}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -153,9 +153,9 @@ const landingPage = () => {
                 <p className={menuStyles.price}>(P) R$13,00</p>
                 <p className={menuStyles.price}>(G) R$18,00</p>
               </div>
-            </div>
+            </li>
 
-            <div className={menuStyles.orderOption}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -171,9 +171,9 @@ const landingPage = () => {
                 <p className={menuStyles.price}>(P) R$13,00</p>
                 <p className={menuStyles.price}>(G) R$18,00</p>
               </div>
-            </div>
+            </li>
 
-            <div className={menuStyles.orderOption}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -188,9 +188,9 @@ const landingPage = () => {
               <div className={menuStyles.priceRow}>
                 <p className={menuStyles.price}>(U) R$12,00</p>
               </div>
-            </div>
+            </li>
 
-            <div className={menuStyles.orderOption}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -206,8 +206,8 @@ const landingPage = () => {
                 <p className={menuStyles.price}>(P) R$14,00</p>
                 <p className={menuStyles.price}>(G) R$19,00</p>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
 
         <div id="burgers" className={menuStyles.menuSubsection}>
@@ -217,8 +217,8 @@ const landingPage = () => {
             Burgueres
           </h3>
 
-          <div className={menuStyles.optionsGrid}>
-            <div className={menuStyles.orderOption}>
+          <ul className={menuStyles.optionsGrid}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -233,9 +233,9 @@ const landingPage = () => {
               <div className={menuStyles.priceRow}>
                 <p className={menuStyles.price}>(U) R$ 19,90</p>
               </div>
-            </div>
+            </li>
 
-            <div className={menuStyles.orderOption}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -251,9 +251,9 @@ const landingPage = () => {
               <div className={menuStyles.priceRow}>
                 <p className={menuStyles.price}>(U) R$ 24,90</p>
               </div>
-            </div>
+            </li>
 
-            <div className={menuStyles.orderOption}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -268,9 +268,9 @@ const landingPage = () => {
               <div className={menuStyles.priceRow}>
                 <p className={menuStyles.price}>(U) R$ 17,90</p>
               </div>
-            </div>
+            </li>
 
-            <div className={menuStyles.orderOption}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -285,9 +285,9 @@ const landingPage = () => {
               <div className={menuStyles.priceRow}>
                 <p className={menuStyles.price}>(U) R$ 21,90</p>
               </div>
-            </div>
+            </li>
 
-            <div className={menuStyles.orderOption}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -302,9 +302,9 @@ const landingPage = () => {
               <div className={menuStyles.priceRow}>
                 <p className={menuStyles.price}>(U) R$ 23,90</p>
               </div>
-            </div>
+            </li>
 
-            <div className={menuStyles.orderOption}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -319,8 +319,8 @@ const landingPage = () => {
               <div className={menuStyles.priceRow}>
                 <p className={menuStyles.price}>(U) R$ 23,90</p>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
 
         <div id="snacks" className={menuStyles.menuSubsection}>
@@ -330,8 +330,8 @@ const landingPage = () => {
             Lanches
           </h3>
 
-          <div className={menuStyles.optionsGrid}>
-            <div className={menuStyles.orderOption}>
+          <ul className={menuStyles.optionsGrid}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -346,9 +346,9 @@ const landingPage = () => {
                 <p className={menuStyles.price}>(P) R$8,00</p>
                 <p className={menuStyles.price}>(G) R$12,00</p>
               </div>
-            </div>
+            </li>
 
-            <div className={menuStyles.orderOption}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -363,9 +363,9 @@ const landingPage = () => {
                 <p className={menuStyles.price}>(P) R$7,50</p>
                 <p className={menuStyles.price}>(G) R$10,00</p>
               </div>
-            </div>
+            </li>
 
-            <div className={menuStyles.orderOption}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -381,9 +381,9 @@ const landingPage = () => {
                 <p className={menuStyles.price}>(P) R$8,00</p>
                 <p className={menuStyles.price}>(G) R$14,00</p>
               </div>
-            </div>
+            </li>
 
-            <div className={menuStyles.orderOption}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -398,9 +398,9 @@ const landingPage = () => {
               <div className={menuStyles.priceRow}>
                 <p className={menuStyles.price}>(U) R$25,00</p>
               </div>
-            </div>
+            </li>
 
-            <div className={menuStyles.orderOption}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -415,8 +415,8 @@ const landingPage = () => {
                 <p className={menuStyles.price}>(P) R$10,00</p>
                 <p className={menuStyles.price}>(G) R$14,00</p>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
 
         <div id="smoothies" className={menuStyles.menuSubsection}>
@@ -426,8 +426,8 @@ const landingPage = () => {
             Smoothies
           </h3>
 
-          <div className={menuStyles.optionsGrid}>
-            <div className={menuStyles.orderOption}>
+          <ul className={menuStyles.optionsGrid}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -442,9 +442,9 @@ const landingPage = () => {
               <div className={menuStyles.priceRow}>
                 <p className={menuStyles.price}>(U) R$16,00</p>
               </div>
-            </div>
+            </li>
 
-            <div className={menuStyles.orderOption}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -458,9 +458,9 @@ const landingPage = () => {
               <div className={menuStyles.priceRow}>
                 <p className={menuStyles.price}>(U) R$16,00</p>
               </div>
-            </div>
+            </li>
 
-            <div className={menuStyles.orderOption}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -475,9 +475,9 @@ const landingPage = () => {
               <div className={menuStyles.priceRow}>
                 <p className={menuStyles.price}>(U) R$18,00</p>
               </div>
-            </div>
+            </li>
 
-            <div className={menuStyles.orderOption}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -493,9 +493,9 @@ const landingPage = () => {
               <div className={menuStyles.priceRow}>
                 <p className={menuStyles.price}>(U) R$20,00</p>
               </div>
-            </div>
+            </li>
 
-            <div className={menuStyles.orderOption}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -510,9 +510,9 @@ const landingPage = () => {
               <div className={menuStyles.priceRow}>
                 <p className={menuStyles.price}>(U) R$16,00</p>
               </div>
-            </div>
+            </li>
 
-            <div className={menuStyles.orderOption}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -526,8 +526,8 @@ const landingPage = () => {
               <div className={menuStyles.priceRow}>
                 <p className={menuStyles.price}>(U) R$16,00</p>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
 
         <div id="drinks" className={menuStyles.menuSubsection}>
@@ -537,8 +537,8 @@ const landingPage = () => {
             Bebidas
           </h3>
 
-          <div className={menuStyles.optionsGrid}>
-            <div className={menuStyles.orderOption}>
+          <ul className={menuStyles.optionsGrid}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -553,9 +553,9 @@ const landingPage = () => {
                 <p className={menuStyles.price}>(P) R$14,00</p>
                 <p className={menuStyles.price}>(G) R$17,00</p>
               </div>
-            </div>
+            </li>
 
-            <div className={menuStyles.orderOption}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -570,9 +570,9 @@ const landingPage = () => {
                 <p className={menuStyles.price}>(P) R$14,00</p>
                 <p className={menuStyles.price}>(G) R$17,00</p>
               </div>
-            </div>
+            </li>
 
-            <div className={menuStyles.orderOption}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -587,9 +587,9 @@ const landingPage = () => {
                 <p className={menuStyles.price}>(P) R$13,00</p>
                 <p className={menuStyles.price}>((G) R$15,00</p>
               </div>
-            </div>
+            </li>
 
-            <div className={menuStyles.orderOption}>
+            <li className={menuStyles.orderOption}>
               <div>
                 <h4
                   className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
@@ -604,8 +604,8 @@ const landingPage = () => {
                 <p className={menuStyles.price}>(P) R$13,00</p>
                 <p className={menuStyles.price}>(G) R$15,00</p>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -793,8 +793,8 @@ const landingPage = () => {
       </section>
 
       <footer id="contact" className={contactStyles.contactSection}>
-        <div className={contactStyles.container}>
-          <div className={contactStyles.column}>
+        <ul className={contactStyles.container}>
+          <li className={contactStyles.column}>
             <h2
               className={`${generalStyles.sectionHeading} ${contactStyles.columnHeading}`}
             >
@@ -814,8 +814,8 @@ const landingPage = () => {
             <p className={contactStyles.contactCopy}>
               Atendemos presencialmente, via Whatsapp e aplicativo de entrega
             </p>
-          </div>
-          <div className={contactStyles.column}>
+          </li>
+          <li className={contactStyles.column}>
             <h2
               className={`${generalStyles.sectionHeading} ${contactStyles.columnHeading}`}
             >
@@ -827,8 +827,8 @@ const landingPage = () => {
             <p className={contactStyles.contactCopy}>
               <i>Domingo</i> | Fechado
             </p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </footer>
     </div>
   )
