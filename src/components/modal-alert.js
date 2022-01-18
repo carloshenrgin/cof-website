@@ -3,16 +3,33 @@ import * as generalStyles from "../styles/general.module.scss"
 import * as modalStyles from "../styles/modal.module.scss"
 
 const ModalAlert = () => {
+  const [loaded, setLoaded] = React.useState(false)
+  let modal = document.getElementsByClassName(`${modalStyles.alertModal}`)
+  let close = document.getElementsByClassName(`${modalStyles.closeBtn}`)
+  let gotIt = document.getElementsByClassName(`${modalStyles.gotItBtn}`)
+
+  const loadModal = () => {
+    if (!loaded) {
+      modal[0].style.display = "flex"
+      modal[0].style.justifyContent = "center"
+      modal[0].style.alignItems = "center"
+
+      document.body.style.overflow = "hidden"
+
+      setLoaded(true)
+    }
+  }
+
   useEffect(() => {
-    var modal = document.getElementsByClassName(`${modalStyles.alertModal}`)
-    var close = document.getElementsByClassName(`${modalStyles.closeBtn}`)
-    var gotIt = document.getElementsByClassName(`${modalStyles.gotItBtn}`)
+    window.addEventListener("load", loadModal(), [])
 
     close[0].onclick = function () {
       modal[0].style.display = "none"
+      document.body.style.overflow = "visible"
     }
     gotIt[0].onclick = function () {
       modal[0].style.display = "none"
+      document.body.style.overflow = "visible"
     }
   })
 
@@ -49,9 +66,7 @@ const ModalAlert = () => {
           {/* <button className={`${modalStyles.gotItBtn}`}>
             <span className={`${modalStyles.btnText}`}>Entendido</span>
           </button> */}
-          <a className={`${modalStyles.gotItBtn}`} href="/#home">
-            Entendido
-          </a>
+          <div className={`${modalStyles.gotItBtn}`}>Entendido</div>
         </div>
       </div>
     </div>
