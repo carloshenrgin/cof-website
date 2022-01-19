@@ -53,8 +53,12 @@
 
   .container {
     grid-template-columns: 1fr;
-    row-gap: 4.8rem;
+    row-gap: 5.6rem;
     padding: 9.6rem 4.8rem;
+  }
+
+  .column-heading {
+    margin-bottom: 3.2rem;
   }
 }
 
