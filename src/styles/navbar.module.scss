@@ -100,7 +100,7 @@ $logo-orange-1: #ea9b58;
     justify-content: center;
 
     transform: translateX(100%);
-    transition: all 0.5s;
+    // transition: all 0.5s;
   }
 
   .nav-display .main-nav {
@@ -108,6 +108,7 @@ $logo-orange-1: #ea9b58;
     visibility: visible;
     pointer-events: all;
     transform: translateX(0);
+    transition: all 0.5s;
 
     z-index: 1;
   }

@@ -36,11 +36,19 @@ const Navbar = () => {
     }
     close[0].onclick = function () {
       openNavigation(false)
+
+      document.getElementsByClassName(
+        `${navStyles.mainNav}`
+      )[0].style.transition = "all 0.5s"
     }
 
     for (var i = 0, len = main.length; i < len; i++) {
       main[i].onclick = function () {
         openNavigation(false)
+
+        document.getElementsByClassName(
+          `${navStyles.mainNav}`
+        )[0].style.transition = "all 0.5s"
       }
     }
   })
