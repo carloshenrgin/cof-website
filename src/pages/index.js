@@ -22,9 +22,7 @@ const landingPage = () => {
 
           <div className={heroStyles.heroTextContainer}>
             <div className={heroStyles.heroText}>
-              <h1
-                className={`${generalStyles.pageHeading} ${heroStyles.heroHeading}`}
-              >
+              <h1 className={`${generalStyles.pageHeading}`}>
                 Saudável. Delicioso.
                 <span className={heroStyles.headingAccent}> Vegano.</span>
               </h1>
@@ -44,18 +42,14 @@ const landingPage = () => {
 
       <section id="menu" className={menuStyles.container}>
         <h2
-          className={`${generalStyles.sectionHeading} ${menuStyles.menuHeading}`}
+          className={`${generalStyles.sectionHeading} ${generalStyles.headingSlash}`}
         >
           Cardápio
         </h2>
 
         <ul className={menuStyles.menuBody}>
           <li id="packed-lunches">
-            <h3
-              className={`${generalStyles.sectionSubheading} ${menuStyles.subsectionHeading}`}
-            >
-              Marmitas
-            </h3>
+            <h3 className={`${generalStyles.sectionSubheading}`}>Marmitas</h3>
 
             <ul className={menuStyles.optionsGrid}>
               {/* Menu Option */}
@@ -183,11 +177,7 @@ const landingPage = () => {
           </li>
 
           <li id="burgers">
-            <h3
-              className={`${generalStyles.sectionSubheading} ${menuStyles.subsectionHeading}`}
-            >
-              Burgueres
-            </h3>
+            <h3 className={`${generalStyles.sectionSubheading} `}>Burgueres</h3>
 
             <ul className={menuStyles.optionsGrid}>
               <li className={menuStyles.orderOption}>
@@ -296,11 +286,7 @@ const landingPage = () => {
           </li>
 
           <li id="snacks">
-            <h3
-              className={`${generalStyles.sectionSubheading} ${menuStyles.subsectionHeading}`}
-            >
-              Lanches
-            </h3>
+            <h3 className={`${generalStyles.sectionSubheading} `}>Lanches</h3>
 
             <ul className={menuStyles.optionsGrid}>
               <li className={menuStyles.orderOption}>
@@ -392,11 +378,7 @@ const landingPage = () => {
           </li>
 
           <li id="smoothies">
-            <h3
-              className={`${generalStyles.sectionSubheading} ${menuStyles.subsectionHeading}`}
-            >
-              Smoothies
-            </h3>
+            <h3 className={`${generalStyles.sectionSubheading} `}>Smoothies</h3>
 
             <ul className={menuStyles.optionsGrid}>
               <li className={menuStyles.orderOption}>
@@ -504,11 +486,7 @@ const landingPage = () => {
           </li>
 
           <li id="drinks">
-            <h3
-              className={`${generalStyles.sectionSubheading} ${menuStyles.subsectionHeading}`}
-            >
-              Bebidas
-            </h3>
+            <h3 className={`${generalStyles.sectionSubheading} `}>Bebidas</h3>
 
             <ul className={menuStyles.optionsGrid}>
               <li className={menuStyles.orderOption}>
@@ -710,7 +688,7 @@ const landingPage = () => {
 
       <section id="about-us" className={aboutUsStyles.container}>
         <h2
-          className={`${generalStyles.sectionHeading} ${aboutUsStyles.aboutHeading}`}
+          className={`${generalStyles.sectionHeading} ${generalStyles.headingSlash}`}
         >
           Sobre Nós
         </h2>
@@ -722,10 +700,8 @@ const landingPage = () => {
           </p>
         </div>
 
-        <div class="values-section">
-          <h3
-            className={`${generalStyles.sectionSubheading} ${aboutUsStyles.ourValues}`}
-          >
+        <div>
+          <h3 className={`${generalStyles.sectionSubheading}`}>
             Nossos Valores
           </h3>
           <ul className={aboutUsStyles.valuesRow}>

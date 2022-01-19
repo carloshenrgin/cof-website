@@ -7,21 +7,6 @@ $logo-orange-1: #ea9b58;
   padding: 12.8rem 4.8rem;
 }
 
-.about-heading {
-  margin-bottom: 4.8rem;
-}
-
-.about-heading::after {
-  content: "";
-  background-color: $logo-orange-1;
-
-  display: block;
-  height: 0.2rem;
-  width: 8rem;
-  margin: 0 auto;
-  margin-top: 3.2rem;
-}
-
 .intro-container {
   max-width: 80rem;
   margin: 0 auto;
@@ -31,9 +16,9 @@ $logo-orange-1: #ea9b58;
   line-height: 1.25;
 }
 
-.our-values {
-  margin-bottom: 3.2rem;
-}
+// .our-values {
+//   margin-bottom: 3.2rem;
+// }
 
 .values-row {
   list-style: none;

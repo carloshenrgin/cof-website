@@ -44,6 +44,8 @@ body {
   font-size: 5.6rem;
   text-transform: uppercase;
   font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
 }
 
 .section-heading {
@@ -51,6 +53,7 @@ body {
   text-transform: uppercase;
   font-weight: 300;
   text-align: center;
+  margin-bottom: 4.8rem;
 }
 
 .section-subheading {
@@ -58,6 +61,7 @@ body {
   text-transform: uppercase;
   font-weight: 300;
   text-align: center;
+  margin-bottom: 3.2rem;
 }
 
 .content-heading {
@@ -76,6 +80,17 @@ li {
 
 a {
   font-size: 1.6rem;
+}
+
+.heading-slash::after {
+  content: "";
+  background-color: $logo-orange-1;
+
+  display: block;
+  height: 0.2rem;
+  width: 8rem;
+  margin: 0 auto;
+  margin-top: 3.2rem;
 }
 
 // MEDIA QUERIES

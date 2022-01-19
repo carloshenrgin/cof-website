@@ -8,21 +8,6 @@ $logo-green-shade-1: #3d570e;
   padding: 12.8rem 4.8rem;
 }
 
-.menu-heading {
-  margin-bottom: 4.8rem;
-}
-
-.menu-heading::after {
-  content: "";
-  background-color: $logo-orange-1;
-
-  display: block;
-  height: 0.2rem;
-  width: 8rem;
-  margin: 0 auto;
-  margin-top: 3.2rem;
-}
-
 .menu-body {
   list-style: none;
   display: flex;
@@ -30,9 +15,9 @@ $logo-green-shade-1: #3d570e;
   gap: 5.6rem;
 }
 
-.subsection-heading {
-  margin-bottom: 3.2rem;
-}
+// .subsection-heading {
+//   margin-bottom: 3.2rem;
+// }
 
 .options-grid {
   list-style: none;
