@@ -748,46 +748,47 @@ const landingPage = () => {
         </div>
       </section>
 
-      <footer
-        id="contact"
-        className={`${contactStyles.contactSection} ${generalStyles.containerX} ${generalStyles.containerY}`}
-      >
-        <ul className={contactStyles.container}>
-          <li className={contactStyles.column}>
-            <h2
-              className={`${generalStyles.sectionHeading} ${contactStyles.columnHeading}`}
-            >
-              CONTATO
-            </h2>
-            <div className={contactStyles.contactInfo}>
+      <footer id="contact" className={`${contactStyles.contactSection} `}>
+        <div
+          className={`${generalStyles.containerX} ${generalStyles.containerY}`}
+        >
+          <ul className={contactStyles.container}>
+            <li className={contactStyles.column}>
+              <h2
+                className={`${generalStyles.sectionHeading} ${contactStyles.columnHeading}`}
+              >
+                CONTATO
+              </h2>
+              <div className={contactStyles.contactInfo}>
+                <p className={contactStyles.contactCopy}>
+                  Rua Alfredo Lopes 1717 - Jardim Macarengo
+                </p>
+                <p className={contactStyles.contactCopy}>
+                  São Carlos - SP, 13560460
+                </p>
+                <p className={contactStyles.contactCopy}>
+                  (16) 98765-1234 - Whatsapp
+                </p>
+              </div>
               <p className={contactStyles.contactCopy}>
-                Rua Alfredo Lopes 1717 - Jardim Macarengo
+                Atendemos presencialmente, via Whatsapp e aplicativo de entrega
+              </p>
+            </li>
+            <li className={contactStyles.column}>
+              <h2
+                className={`${generalStyles.sectionHeading} ${contactStyles.columnHeading}`}
+              >
+                HORÁRIOS
+              </h2>
+              <p className={contactStyles.contactCopy}>
+                <i>Segunda - Sábado</i> | 11:00 - 15:00
               </p>
               <p className={contactStyles.contactCopy}>
-                São Carlos - SP, 13560460
+                <i>Domingo</i> | Fechado
               </p>
-              <p className={contactStyles.contactCopy}>
-                (16) 98765-1234 - Whatsapp
-              </p>
-            </div>
-            <p className={contactStyles.contactCopy}>
-              Atendemos presencialmente, via Whatsapp e aplicativo de entrega
-            </p>
-          </li>
-          <li className={contactStyles.column}>
-            <h2
-              className={`${generalStyles.sectionHeading} ${contactStyles.columnHeading}`}
-            >
-              HORÁRIOS
-            </h2>
-            <p className={contactStyles.contactCopy}>
-              <i>Segunda - Sábado</i> | 11:00 - 15:00
-            </p>
-            <p className={contactStyles.contactCopy}>
-              <i>Domingo</i> | Fechado
-            </p>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </footer>
     </div>
   )
