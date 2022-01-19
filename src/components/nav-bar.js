@@ -26,39 +26,22 @@ const Navbar = () => {
   }
 
   const [navigation, openNavigation] = React.useState(false)
-  let open = document.getElementsByClassName(`${navStyles.openBtn}`)
-  let close = document.getElementsByClassName(`${navStyles.closeBtn}`)
-  let main = document.getElementsByClassName(`${navStyles.navBtn}`)
+  const openMenu = () => {
+    openNavigation(true)
+    document.body.style.overflow = "hidden"
+  }
 
-  useEffect(() => {
-    open[0].onclick = function () {
-      openNavigation(true)
-    }
-    close[0].onclick = function () {
-      openNavigation(false)
-
-      document.getElementsByClassName(
-        `${navStyles.mainNav}`
-      )[0].style.transition = "all 0.5s"
-    }
-
-    for (var i = 0, len = main.length; i < len; i++) {
-      main[i].onclick = function () {
-        openNavigation(false)
-
-        document.getElementsByClassName(
-          `${navStyles.mainNav}`
-        )[0].style.transition = "all 0.5s"
-      }
-    }
-  })
+  const closeMenu = () => {
+    openNavigation(false)
+    document.body.style.overflow = "visible"
+    document.getElementsByClassName(
+      `${navStyles.mainNav}`
+    )[0].style.transition = "all 0.5s"
+  }
 
   let displayController = [``]
   if (navigation) {
     displayController.push(`${navStyles.navDisplay}`)
-    document.body.style.overflow = "hidden"
-  } else {
-    document.body.style.overflow = "visible"
   }
 
   return (
@@ -82,22 +65,42 @@ const Navbar = () => {
         <div className={displayController.join("")}>
           <ul className={navStyles.mainNav}>
             <li>
-              <a href="#menu" className={`${navStyles.navBtn}`}>
+              <a
+                href="#menu"
+                className={`${navStyles.navBtn}`}
+                onClick={closeMenu}
+                // onKeyPress={closeKey}
+              >
                 Cardápio
               </a>
             </li>
             <li>
-              <a href="#gallery" className={`${navStyles.navBtn}`}>
+              <a
+                href="#gallery"
+                className={`${navStyles.navBtn}`}
+                onClick={closeMenu}
+                // onKeyPress={closeKey}
+              >
                 Galeria
               </a>
             </li>
             <li>
-              <a href="#about-us" className={`${navStyles.navBtn}`}>
+              <a
+                href="#about-us"
+                className={`${navStyles.navBtn}`}
+                onClick={closeMenu}
+                // onKeyPress={closeKey}
+              >
                 Sobre Nós
               </a>
             </li>
             <li>
-              <a href="#contact" className={`${navStyles.navBtn}`}>
+              <a
+                href="#contact"
+                className={`${navStyles.navBtn}`}
+                onClick={closeMenu}
+                // onKeyPress={closeKey}
+              >
                 Contato
               </a>
             </li>
@@ -108,6 +111,8 @@ const Navbar = () => {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className={`${navStyles.openBtn}`}
+                onClick={openMenu}
+                // onKeyPress={openKey}
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -124,6 +129,8 @@ const Navbar = () => {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className={`${navStyles.closeBtn}`}
+                onClick={closeMenu}
+                // onKeyPress={closeKey}
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
