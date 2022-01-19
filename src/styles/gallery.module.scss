@@ -30,3 +30,10 @@ $logo-orange-1: #ea9b58;
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+// FOR PHONES (MAX WIDTH 576px = 36em)
+@media (max-width: 36em) {
+  .dishes-showcase {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

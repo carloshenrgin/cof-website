@@ -64,3 +64,17 @@
     padding: 9.6rem 3.2rem;
   }
 }
+
+// FOR EVEN SMALLER PORTRAIT TABLETS (MAX WIDTH OF 704px = 44em)
+@media (max-width: 44em) {
+  .container {
+    padding: 8rem 3.2rem;
+  }
+}
+
+// FOR PHONES (MAX WIDTH 576px = 36em)
+@media (max-width: 36em) {
+  .container {
+    padding: 6.4rem 3.2rem;
+  }
+}

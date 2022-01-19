@@ -85,6 +85,10 @@ $logo-green-shade-1: #3d570e;
   line-height: 1.2;
 }
 
+.order-option:last-child {
+  margin-bottom: 0;
+}
+
 .price-row {
   display: flex;
   gap: 1.2rem;
@@ -116,7 +120,26 @@ $logo-green-shade-1: #3d570e;
   .container {
     padding: 9.6rem 3.2rem;
   }
+
   .options-grid {
     column-gap: 3.2rem;
+  }
+}
+
+// FOR EVEN SMALLER PORTRAIT TABLETS (MAX WIDTH OF 704px = 44em)
+@media (max-width: 44em) {
+  .container {
+    padding: 8rem 3.2rem;
+  }
+}
+
+// FOR PHONES (MAX WIDTH 576px = 36em)
+@media (max-width: 36em) {
+  .options-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 6.4rem 3.2rem;
   }
 }

@@ -98,4 +98,15 @@ $logo-green: #7bb41c;
   .hero-text-container {
     padding: 0 3.2rem;
   }
+
+  .hero-text {
+    width: 33%;
+  }
+}
+
+// FOR PHONES (MAX WIDTH 576px = 36em)
+@media (max-width: 36em) {
+  .hero-text {
+    width: 50%;
+  }
 }
