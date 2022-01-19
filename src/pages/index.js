@@ -609,7 +609,7 @@ const landingPage = () => {
         </div>
       </section>
 
-      <section id="gallery" className={galleryStyles.container}>
+      <section id="gallery">
         <ul className={galleryStyles.dishesShowcase}>
           <li>
             <figure className={galleryStyles.dishContainer}>
