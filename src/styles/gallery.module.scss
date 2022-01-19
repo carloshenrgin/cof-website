@@ -4,11 +4,11 @@ $logo-orange-1: #ea9b58;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  background-color: #000;
 }
 
 .dish-container {
   overflow: hidden;
-  background-color: #000;
 }
 
 .dish-photo {
