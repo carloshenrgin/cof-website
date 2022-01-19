@@ -48,35 +48,6 @@ const landingPage = () => {
         >
           Cardápio
         </h2>
-        <nav>
-          <ul className={menuStyles.menuNav}>
-            <li>
-              <a href="#packed-lunches" className={menuStyles.menuBtn}>
-                Marmitas
-              </a>
-            </li>
-            <li>
-              <a href="#burgers" className={menuStyles.menuBtn}>
-                Burgueres
-              </a>
-            </li>
-            <li>
-              <a href="#snacks" className={menuStyles.menuBtn}>
-                Lanches
-              </a>
-            </li>
-            <li>
-              <a href="#smoothies" className={menuStyles.menuBtn}>
-                Smoothies
-              </a>
-            </li>
-            <li>
-              <a href="#drinks" className={menuStyles.menuBtn}>
-                Bebidas
-              </a>
-            </li>
-          </ul>
-        </nav>
 
         <ul className={menuStyles.menuBody}>
           <li id="packed-lunches">
