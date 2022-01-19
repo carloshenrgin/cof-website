@@ -12,7 +12,7 @@ $logo-orange-1: #ea9b58;
 }
 
 .logo-img-sticky {
-  display: none;
+  display: none !important;
 }
 
 .main-nav {
@@ -59,7 +59,7 @@ $logo-orange-1: #ea9b58;
 }
 
 .scrolled .logo-img-sticky {
-  display: block;
+  display: block !important;
   max-width: 17.2rem;
 }
 
