@@ -1,42 +1,26 @@
-import React, { useEffect } from "react"
+import React from "react"
 import * as generalStyles from "../styles/general.module.scss"
 import * as modalStyles from "../styles/modal.module.scss"
 
 const ModalAlert = () => {
-  const [loaded, setLoaded] = React.useState(false)
-  let modal = document.getElementsByClassName(`${modalStyles.alertModal}`)
-  let close = document.getElementsByClassName(`${modalStyles.closeBtn}`)
-  let gotIt = document.getElementsByClassName(`${modalStyles.gotItBtn}`)
+  const [closed, setClosed] = React.useState(false)
 
-  const loadModal = () => {
-    if (!loaded) {
-      modal[0].style.display = "flex"
-      modal[0].style.justifyContent = "center"
-      modal[0].style.alignItems = "center"
-
-      document.body.style.overflow = "hidden"
-
-      setLoaded(true)
-    }
+  const closeModal = () => {
+    setClosed(true)
   }
 
-  useEffect(() => {
-    window.addEventListener("load", loadModal(), [])
-
-    close[0].onclick = function () {
-      modal[0].style.display = "none"
-      document.body.style.overflow = "visible"
-    }
-    gotIt[0].onclick = function () {
-      modal[0].style.display = "none"
-      document.body.style.overflow = "visible"
-    }
-  })
-
   return (
-    <div className={`${modalStyles.alertModal}`}>
+    <div
+      className={`${modalStyles.alertModal} ${
+        closed ? modalStyles.hidden : modalStyles.visible
+      }`}
+    >
       <div className={`${modalStyles.modalContent}`}>
-        <button className={`${modalStyles.closeBtn}`}>
+        <button
+          className={`${modalStyles.closeBtn}`}
+          onClick={closeModal}
+          onKeyDown={closeModal}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className={`${modalStyles.closeIcon}`}
@@ -63,10 +47,16 @@ const ModalAlert = () => {
             Devido à pandemia, temos atendido apenas via delivery. Quando a
             situação se normalizar voltaremos a atender presencialmente.
           </p>
-          {/* <button className={`${modalStyles.gotItBtn}`}>
-            <span className={`${modalStyles.btnText}`}>Entendido</span>
-          </button> */}
-          <div className={`${modalStyles.gotItBtn}`}>Entendido</div>
+
+          <div
+            role="button"
+            tabIndex="0"
+            className={`${modalStyles.gotItBtn}`}
+            onClick={closeModal}
+            onKeyDown={closeModal}
+          >
+            Entendido
+          </div>
         </div>
       </div>
     </div>

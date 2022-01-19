@@ -10,7 +10,15 @@ $logo-orange-2-shade-2: #997032;
   position: fixed;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.6);
+}
 
+.visible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
   display: none;
 }
 
