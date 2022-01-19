@@ -51,8 +51,11 @@ $logo-green-shade-1: #3d570e;
   border: 1px solid $logo-green-shade-1;
 }
 
-.menu-subsection {
-  margin-bottom: 5.6rem;
+.menu-body {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5.6rem;
 }
 
 .subsection-heading {
