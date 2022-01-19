@@ -85,3 +85,12 @@ $logo-orange-2-shade-2: #997032;
   color: #fff;
   border: 1px solid $logo-orange-2-shade-1;
 }
+
+// MEDIA QUERIES
+
+// FOR PHONES (MAX WIDTH 576px = 36em)
+@media (max-width: 36em) {
+  .modal-content {
+    max-width: 85%;
+  }
+}
