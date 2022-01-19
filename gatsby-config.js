@@ -22,4 +22,5 @@ module.exports = {
     },
     `gatsby-plugin-modal-routing-3`,
   ],
+  pathPrefix: `/cof-website`,
 }
