@@ -17,7 +17,7 @@ const landingPage = () => {
     <div>
       <ModalAlert />
       <header id="home" className={heroStyles.heroSection}>
-        <div className={heroStyles.container}>
+        <div className={`${heroStyles.container} ${generalStyles.containerX}`}>
           <Navbar />
 
           <div className={heroStyles.heroTextContainer}>
@@ -40,7 +40,10 @@ const landingPage = () => {
         </div>
       </header>
 
-      <section id="menu" className={menuStyles.container}>
+      <section
+        id="menu"
+        className={`${generalStyles.containerX} ${generalStyles.containerY}`}
+      >
         <h2
           className={`${generalStyles.sectionHeading} ${generalStyles.headingSlash}`}
         >
@@ -686,7 +689,10 @@ const landingPage = () => {
         </ul>
       </section>
 
-      <section id="about-us" className={aboutUsStyles.container}>
+      <section
+        id="about-us"
+        className={`${generalStyles.containerX} ${generalStyles.containerY}`}
+      >
         <h2
           className={`${generalStyles.sectionHeading} ${generalStyles.headingSlash}`}
         >
@@ -742,7 +748,10 @@ const landingPage = () => {
         </div>
       </section>
 
-      <footer id="contact" className={contactStyles.contactSection}>
+      <footer
+        id="contact"
+        className={`${contactStyles.contactSection} ${generalStyles.containerX} ${generalStyles.containerY}`}
+      >
         <ul className={contactStyles.container}>
           <li className={contactStyles.column}>
             <h2

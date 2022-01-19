@@ -2,13 +2,8 @@ $logo-orange-1: #ea9b58;
 $logo-green: #7bb41c;
 
 .container {
-  max-width: 120rem;
   height: inherit;
-  margin: 0 auto;
   position: relative;
-
-  // padding: 0 1.2rem;
-  padding: 0 4.8rem;
 }
 
 .hero-section {
@@ -47,11 +42,6 @@ $logo-green: #7bb41c;
 .hero-text {
   width: 25%;
 }
-
-// .hero-heading {
-//   line-height: 1.2;
-//   margin-bottom: 0.8rem;
-// }
 
 .heading-accent {
   color: $logo-green;
@@ -94,7 +84,6 @@ $logo-green: #7bb41c;
 
 // FOR SMALLER PORTRAIT TABLETS (MAX WIDTH OF 768px = 48em)
 @media (max-width: 48em) {
-  .container,
   .hero-text-container {
     padding: 0 3.2rem;
   }
@@ -110,7 +99,6 @@ $logo-green: #7bb41c;
 
 // FOR PHONES (MAX WIDTH 576px = 36em)
 @media (max-width: 36em) {
-  .container,
   .hero-text-container {
     padding: 0 2.4rem;
   }
