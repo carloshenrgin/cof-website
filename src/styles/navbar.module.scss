@@ -152,4 +152,15 @@ $logo-orange-1: #ea9b58;
   .nav-display .nav-close {
     display: block;
   }
+
+  .scrolled .nav-bar {
+    padding: 1.6rem 3.2rem;
+  }
+}
+
+// FOR PHONES (MAX WIDTH 576px = 36em)
+@media (max-width: 36em) {
+  .scrolled .nav-bar {
+    padding: 1.6rem 2.4rem;
+  }
 }
