@@ -1,9 +1,21 @@
-import React from "react"
+import React, { useEffect } from "react"
 import * as generalStyles from "../styles/general.module.scss"
 import * as modalStyles from "../styles/modal.module.scss"
 
 const ModalAlert = () => {
   const [closed, setClosed] = React.useState(false)
+
+  const hideScroll = () => {
+    if (!closed) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = "visible"
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("load", hideScroll())
+  })
 
   const closeModal = () => {
     setClosed(true)
