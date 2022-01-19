@@ -102,11 +102,28 @@ $logo-green: #7bb41c;
   .hero-text {
     width: 33%;
   }
+
+  .hero-section {
+    background-position: 40%;
+  }
 }
 
 // FOR PHONES (MAX WIDTH 576px = 36em)
 @media (max-width: 36em) {
   .hero-text {
     width: 50%;
+  }
+
+  .hero-section {
+    background-position: 45%;
+  }
+}
+
+// FOR SMALLER PHONES (MAX WIDTH 336px = 21em)
+// Just to cover screen sizes for iphone 5 and adjacent
+@media (max-width: 21em) {
+  .cta-btn:link,
+  .cta-btn:visited {
+    padding: 1.6rem 2.4rem;
   }
 }
