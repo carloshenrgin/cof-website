@@ -11,10 +11,12 @@ import * as galleryStyles from "../styles/gallery.module.scss"
 
 import ModalAlert from "../components/modal-alert"
 import Navbar from "../components/nav-bar"
+import Seo from "../components/seo.js"
 
 const landingPage = () => {
   return (
     <div>
+      <Seo />
       <ModalAlert />
       <header id="home" className={heroStyles.heroSection}>
         <div className={`${heroStyles.container} ${generalStyles.containerX}`}>
