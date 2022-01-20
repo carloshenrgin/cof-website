@@ -69,7 +69,6 @@ const Navbar = () => {
                 href="#menu"
                 className={`${navStyles.navBtn}`}
                 onClick={closeMenu}
-                // onKeyPress={closeKey}
               >
                 Cardápio
               </a>
@@ -79,7 +78,6 @@ const Navbar = () => {
                 href="#gallery"
                 className={`${navStyles.navBtn}`}
                 onClick={closeMenu}
-                // onKeyPress={closeKey}
               >
                 Galeria
               </a>
@@ -89,7 +87,6 @@ const Navbar = () => {
                 href="#about-us"
                 className={`${navStyles.navBtn}`}
                 onClick={closeMenu}
-                // onKeyPress={closeKey}
               >
                 Sobre Nós
               </a>
@@ -99,7 +96,6 @@ const Navbar = () => {
                 href="#contact"
                 className={`${navStyles.navBtn}`}
                 onClick={closeMenu}
-                // onKeyPress={closeKey}
               >
                 Contato
               </a>
@@ -112,7 +108,6 @@ const Navbar = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 className={`${navStyles.openBtn}`}
                 onClick={openMenu}
-                // onKeyPress={openKey}
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -130,7 +125,6 @@ const Navbar = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 className={`${navStyles.closeBtn}`}
                 onClick={closeMenu}
-                // onKeyPress={closeKey}
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

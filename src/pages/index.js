@@ -57,22 +57,6 @@ const landingPage = () => {
             <h3 className={`${generalStyles.sectionSubheading}`}>Marmitas</h3>
 
             <ul className={menuStyles.optionsGrid}>
-              {/* Menu Option */}
-              {/* <li className={menuStyles.orderOption}>
-                  <div >
-                    <h4
-                      className={`${generalStyles.contentHeading} ${menuStyles.optionHeading}`}
-                    >
-                      Sample Option
-                    </h4>
-                    <p className={menuStyles.optionDescription}>Description</p>
-                  </div>
-                  <div className={menuStyles.priceRow}>
-                    <p className={menuStyles.price}>(P) R$ XX,XX</p>
-                    <p className={menuStyles.price}>(G) R$ XX,XX</p>
-                  </div>
-                </li> */}
-
               <li className={menuStyles.orderOption}>
                 <div>
                   <h4
